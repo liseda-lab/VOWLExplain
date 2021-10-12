@@ -1,0 +1,2617 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://fica.path",
+      "http://purl.obolibrary.org/obo",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://fic.a"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.semanticweb.org/fic.a",
+    "title": "Kidney Cancer Ontology",
+    "author": "LASIGE",
+    "description": "In this ontology we can see the representation of a certain patient associated with kidney cancer, as well as their symptoms and a possible treatment approach (highlighted path)."
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.54",
+      "translation": [
+        -251.14,
+        254.96
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "1"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": true
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Class"
+    },
+    {
+      "id": "41",
+      "type": "owl:Class"
+    },
+    {
+      "id": "49",
+      "type": "owl:Class"
+    },
+    {
+      "id": "27",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "owl:Class"
+    },
+    {
+      "id": "68",
+      "type": "owl:Class"
+    },
+    {
+      "id": "51",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "86",
+      "type": "owl:Class"
+    },
+    {
+      "id": "50",
+      "type": "owl:Class"
+    },
+    {
+      "id": "90",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "100",
+      "type": "owl:Class"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "61",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "40",
+      "type": "owl:Class"
+    },
+    {
+      "id": "65",
+      "type": "owl:Class"
+    },
+    {
+      "id": "39",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "42",
+      "type": "owl:Class"
+    },
+    {
+      "id": "54",
+      "type": "owl:Class"
+    },
+    {
+      "id": "76",
+      "type": "owl:Class"
+    },
+    {
+      "id": "62",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "59",
+      "type": "owl:Class"
+    },
+    {
+      "id": "107",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "64",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:Class"
+    },
+    {
+      "id": "67",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000014",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000014",
+        "undefined": "Abnormality of the bladder"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        135.03,
+        -898.27
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://purl.obolibrary.org/obo/HP_0025031",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0025031",
+        "undefined": "Abnormality of the Digestive System"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -811.17,
+        572.42
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://purl.obolibrary.org/obo/HP_0025032",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0025032",
+        "undefined": "Abnormality of Digestive System Physiology"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -603.57,
+        912.65
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://purl.obolibrary.org/obo/Pharmacologic_substance",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "Pharmacologic_substance",
+        "en": "Pharmacologic Substance"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        2534.91,
+        423.49
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://fic.a/Patient_1",
+      "baseIri": "http://fic.a",
+      "label": {
+        "IRI-based": "Patient_1"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        678.89,
+        335.57
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://purl.obolibrary.org/obo/catalytic_activity",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "catalytic_activity",
+        "en": "Catalytic Activity"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1926.06,
+        -336.22
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://purl.obolibrary.org/obo/HP_0025142",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0025142",
+        "undefined": "Constitutional Symptom"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -582.99,
+        534.91
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "http://purl.obolibrary.org/obo/disease",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "disease",
+        "undefined": "Disease, Disorder or Finding"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1173.16,
+        -899.86
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://purl.obolibrary.org/obo/HP_0011277",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0011277",
+        "undefined": "Abnormality of the urinary system physiology"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -424.28,
+        -428.92
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://purl.obolibrary.org/obo/therapeutic_procedure",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "therapeutic_procedure",
+        "undefined": "Therapeutic Procedure"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1384.16,
+        927.7
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://purl.obolibrary.org/obo/HP_0011035",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0011035",
+        "undefined": "Abnormal renal cortex morphology"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        595.79,
+        -115.84
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "http://fica.path/met_oncogene",
+      "baseIri": "http://fica.path",
+      "label": {
+        "IRI-based": "met_oncogene",
+        "en": "MET Oncogene"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1218.04,
+        25.28
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        1066,
+        1979.94
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://purl.obolibrary.org/obo/urological_surgery",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "urological_surgery",
+        "undefined": "Urologic Surgical Procedure"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1115.17,
+        1139.06
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000776",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000776",
+        "undefined": "Urine output decreased"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        662.57,
+        885
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000017",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000017",
+        "undefined": "Physical health-related concept"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -43.45,
+        1515.62
+      ]
+    },
+    {
+      "id": "68",
+      "iri": "http://purl.obolibrary.org/obo/drug",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "drug",
+        "en": "Drug"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        2060.14,
+        932.73
+      ]
+    },
+    {
+      "id": "51",
+      "iri": "http://purl.obolibrary.org/obo/cancer_gene",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "cancer_gene",
+        "en": "Cancer Gene"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1576.82,
+        84.55
+      ]
+    },
+    {
+      "id": "72",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000790",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000790",
+        "undefined": "Hematuria"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        123.61,
+        98.36
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://purl.obolibrary.org/obo/HP_0012531",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0012531",
+        "undefined": "Pain"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -229.4,
+        687.64
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://purl.obolibrary.org/obo/chemotherapy",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "chemotherapy",
+        "undefined": "Chemotherapy"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1065.5,
+        634.83
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://purl.obolibrary.org/obo/HP_0011458",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0011458",
+        "undefined": "Abdominal Symptom"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -197.89,
+        888.72
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "http://purl.obolibrary.org/obo/renal_mass",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "renal_mass",
+        "undefined": "Renal Mass"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        927.75,
+        -114.03
+      ]
+    },
+    {
+      "id": "86",
+      "iri": "http://purl.obolibrary.org/obo/Malignant_Urinary_System_Neoplasm",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "Malignant_Urinary_System_Neoplasm",
+        "en": "Malignant Urinary System Neoplasm"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1607.46,
+        -680.86
+      ]
+    },
+    {
+      "id": "50",
+      "iri": "http://fica.path/renal_cell_carcinoma",
+      "baseIri": "http://fica.path",
+      "label": {
+        "IRI-based": "renal_cell_carcinoma",
+        "en": "Renal Cell Carcinoma"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1430.11,
+        -353.79
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "http://purl.obolibrary.org/obo/HP_0001939",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0001939",
+        "undefined": "Abnormality of metabolism/homeostasis"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -789.59,
+        -161.79
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://purl.obolibrary.org/obo/patient",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "patient",
+        "en": "Patient"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1107.08,
+        392.58
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_001125",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_001125",
+        "undefined": "Renal and urinary disorders"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        155.92,
+        1184.1
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://purl.obolibrary.org/obo/Tyrosine_kinase_inhibitor",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "Tyrosine_kinase_inhibitor",
+        "en": "Tyrosine Kinase Inhibitor"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        2209.58,
+        425.29
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://purl.obolibrary.org/obo/finding",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "finding",
+        "undefined": "Finding"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1076.46,
+        -535.99
+      ]
+    },
+    {
+      "id": "100",
+      "iri": "http://purl.obolibrary.org/obo/HP_0100518",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0100518",
+        "undefined": "Dysuria"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        674.43,
+        -216.07
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000939",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000939",
+        "undefined": "Renal hemorrhage"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        429.84,
+        832
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://purl.obolibrary.org/obo/HP_0006735",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0006735",
+        "undefined": "Renal Cortical Adenoma"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        373.51,
+        41.18
+      ]
+    },
+    {
+      "id": "95",
+      "iri": "http://purl.obolibrary.org/obo/person",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "person",
+        "undefined": "Person"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1462.63,
+        507.33
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000077",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000077",
+        "undefined": "Abnormality of the kidney"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        78.25,
+        -631.3
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://purl.obolibrary.org/obo/partial_nephrectomy",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "partial_nephrectomy",
+        "undefined": "Partial Nephrectomy"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        911.07,
+        759.47
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000079",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000079",
+        "undefined": "Abnormality of the Urinary System"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -287.22,
+        -747.12
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://purl.obolibrary.org/obo/intervention",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "intervention",
+        "undefined": "Intervention or Procedure"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1596.04,
+        1245.35
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000051",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000051",
+        "undefined": "Investigation"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        741.19,
+        1308.3
+      ]
+    },
+    {
+      "id": "39",
+      "iri": "http://fica.path/sunitinib",
+      "baseIri": "http://fica.path",
+      "label": {
+        "IRI-based": "sunitinib",
+        "en": "Sunitinib"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1955.7,
+        196.72
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://purl.obolibrary.org/obo/HP_0012211",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0012211",
+        "undefined": "Abnormal renal physiology"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -75.7,
+        -294.82
+      ]
+    },
+    {
+      "id": "42",
+      "iri": "http://purl.obolibrary.org/obo/HP_0012210",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0012210",
+        "undefined": "Abnormal renal morphology"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        449.16,
+        -514.32
+      ]
+    },
+    {
+      "id": "54",
+      "iri": "http://purl.obolibrary.org/obo/surgical_procedure",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "surgical_procedure",
+        "undefined": "Surgical Procedure"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1318.5,
+        1459.73
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000050",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000050",
+        "undefined": "Assessment tool"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        743.67,
+        1678.04
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://purl.obolibrary.org/obo/HP_0009726",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0009726",
+        "undefined": "Renal neoplasm"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        60.76,
+        -220.84
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000118",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000118",
+        "undefined": "Phenotipic Abnormality"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -694.7,
+        155.36
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "http://fica.path/antineoplastic_agent",
+      "baseIri": "http://fica.path",
+      "label": {
+        "IRI-based": "antineoplastic_agent",
+        "en": "Antineoplastic Agent"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        2008.27,
+        579.31
+      ]
+    },
+    {
+      "id": "107",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000119",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000119",
+        "undefined": "Abnormality of the Genitourinary System"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -602.27,
+        -354.34
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "http://purl.obolibrary.org/obo/HP_0002027",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0002027",
+        "en": "Abdominal Pain"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        177.73,
+        623.4
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000049",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000049",
+        "undefined": "Adverse events"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        446.73,
+        1236.07
+      ]
+    },
+    {
+      "id": "71",
+      "iri": "http://purl.obolibrary.org/obo/HP_0002664",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0002664",
+        "undefined": "Neoplasm"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -293.29,
+        48.79
+      ]
+    },
+    {
+      "id": "67",
+      "iri": "http://purl.obolibrary.org/obo/CCTO_000043",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "CCTO_000043",
+        "undefined": "Measure of safety"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        294.43,
+        1600.95
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://purl.obolibrary.org/obo/HP_0003110",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0003110",
+        "undefined": "Abnormality of urine homeostasis"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -377.59,
+        -51.09
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://fica.path/protein_tyrosine_kinase_activity",
+      "baseIri": "http://fica.path",
+      "label": {
+        "IRI-based": "protein_tyrosine_kinase_activity",
+        "en": "Protein Tyrosine Kinase Activity"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1668.71,
+        -71.4
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000009",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000009",
+        "undefined": "Functional abnormality of the bladder"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        520.11,
+        -682.29
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "3",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "17",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "20",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "23",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "26",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "28",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "30",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "33",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "35",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "38",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "43",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "46",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "47",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "48",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "52",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "55",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "57",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "58",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "60",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "69",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "70",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "73",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "74",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "80",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "87",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "88",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "92",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "93",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "96",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "97",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "98",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "99",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "101",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "102",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "103",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "104",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "105",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "106",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "108",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "109",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "110",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "111",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "112",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "113",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "114",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "115",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "116",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "117",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "118",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "119",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "120",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "121",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "122",
+      "type": "owl:someValuesFrom"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "3",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "5",
+      "pos": [
+        1013.12,
+        949.26
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "15",
+      "range": "16",
+      "pos": [
+        1224.83,
+        781.27
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "18",
+      "range": "19",
+      "pos": [
+        -400.93,
+        -240.01
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "22",
+      "pos": [
+        1124.81,
+        -717.92
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "24",
+      "range": "25",
+      "pos": [
+        -406.19,
+        611.28
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://purl.obolibrary.org/obo/RO_0000053",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "RO_0000053",
+        "undefined": "bearer of"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "domain": "27",
+      "range": "27",
+      "inverse": "33",
+      "pos": [
+        1213.51,
+        1935.66
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "19",
+      "pos": [
+        -249.99,
+        -361.87
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "31",
+      "range": "21",
+      "pos": [
+        1002.1,
+        -325.01
+      ]
+    },
+    {
+      "id": "32",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "10",
+      "pos": [
+        2372.24,
+        424.39
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://purl.obolibrary.org/obo/RO_0000052",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "RO_0000052",
+        "undefined": "characteristic of"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "domain": "27",
+      "range": "27",
+      "inverse": "26"
+    },
+    {
+      "id": "34",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "8",
+      "pos": [
+        -400.73,
+        900.68
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "36",
+      "range": "37",
+      "pos": [
+        1797.38,
+        -203.81
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "39",
+      "range": "11",
+      "pos": [
+        2082.64,
+        311
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "44",
+      "range": "45",
+      "pos": [
+        292.88,
+        1008.05
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "13",
+      "pos": [
+        892.99,
+        364.08
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "6",
+      "pos": [
+        -707.37,
+        742.53
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "http://purl.obolibrary.org/obo/has_phenotype",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_phenotype",
+        "undefined": "has phenotype"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "49",
+      "range": "50",
+      "pos": [
+        1324.08,
+        -164.25
+      ]
+    },
+    {
+      "id": "52",
+      "iri": "http://purl.obolibrary.org/obo/increases",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "increases",
+        "undefined": "increases"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "49",
+      "range": "36",
+      "pos": [
+        1443.37,
+        -23.06
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "0",
+      "pos": [
+        327.57,
+        -790.28
+      ]
+    },
+    {
+      "id": "55",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "56",
+      "pos": [
+        428.31,
+        479.49
+      ]
+    },
+    {
+      "id": "57",
+      "iri": "http://purl.obolibrary.org/obo/decreases",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "decreases",
+        "undefined": "decreases"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "39",
+      "range": "36",
+      "pos": [
+        1812.2,
+        62.66
+      ]
+    },
+    {
+      "id": "58",
+      "iri": "http://purl.obolibrary.org/obo/has_role",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_role",
+        "undefined": "has role"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "39",
+      "range": "59",
+      "pos": [
+        1981.98,
+        388.01
+      ]
+    },
+    {
+      "id": "60",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "61",
+      "range": "62",
+      "pos": [
+        217.14,
+        -89.83
+      ]
+    },
+    {
+      "id": "69",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "18",
+      "range": "7",
+      "pos": [
+        -536.14,
+        52.14
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "71",
+      "range": "7",
+      "pos": [
+        -493.99,
+        102.08
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "41",
+      "range": "42",
+      "pos": [
+        522.47,
+        -315.08
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "72",
+      "range": "29",
+      "pos": [
+        23.95,
+        -98.23
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "76",
+      "pos": [
+        742.43,
+        1493.17
+      ]
+    },
+    {
+      "id": "77",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "54",
+      "pos": [
+        1216.84,
+        1299.39
+      ]
+    },
+    {
+      "id": "78",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "49",
+      "range": "51",
+      "pos": [
+        1397.43,
+        54.92
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "54",
+      "range": "40",
+      "pos": [
+        1457.27,
+        1352.54
+      ]
+    },
+    {
+      "id": "80",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "56",
+      "range": "24",
+      "pos": [
+        -25.83,
+        655.52
+      ]
+    },
+    {
+      "id": "81",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "63",
+      "range": "65",
+      "pos": [
+        701.88,
+        1096.65
+      ]
+    },
+    {
+      "id": "82",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "40",
+      "pos": [
+        1490.1,
+        1086.53
+      ]
+    },
+    {
+      "id": "83",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "84",
+      "range": "1",
+      "pos": [
+        -104.48,
+        -689.21
+      ]
+    },
+    {
+      "id": "85",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "1",
+      "pos": [
+        -355.75,
+        -588.02
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "42",
+      "range": "84",
+      "pos": [
+        263.7,
+        -572.81
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "84",
+      "pos": [
+        1.28,
+        -463.06
+      ]
+    },
+    {
+      "id": "89",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "1",
+      "pos": [
+        -76.1,
+        -822.7
+      ]
+    },
+    {
+      "id": "91",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "62",
+      "range": "84",
+      "pos": [
+        69.51,
+        -426.07
+      ]
+    },
+    {
+      "id": "92",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "66",
+      "pos": [
+        56.23,
+        1349.86
+      ]
+    },
+    {
+      "id": "93",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "67",
+      "range": "66",
+      "pos": [
+        125.49,
+        1558.29
+      ]
+    },
+    {
+      "id": "94",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "13",
+      "range": "95",
+      "pos": [
+        1284.86,
+        449.95
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "59",
+      "range": "68",
+      "pos": [
+        2034.21,
+        756.02
+      ]
+    },
+    {
+      "id": "97",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "18",
+      "range": "90",
+      "pos": [
+        -583.59,
+        -106.44
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "50",
+      "range": "86",
+      "pos": [
+        1518.79,
+        -517.32
+      ]
+    },
+    {
+      "id": "99",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "100",
+      "range": "2",
+      "pos": [
+        597.27,
+        -449.18
+      ]
+    },
+    {
+      "id": "101",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "67",
+      "pos": [
+        370.58,
+        1418.51
+      ]
+    },
+    {
+      "id": "102",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "62",
+      "range": "71",
+      "pos": [
+        -116.26,
+        -86.02
+      ]
+    },
+    {
+      "id": "103",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "72",
+      "range": "18",
+      "pos": [
+        -126.99,
+        23.64
+      ]
+    },
+    {
+      "id": "104",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "56",
+      "range": "9",
+      "pos": [
+        -10.08,
+        756.06
+      ]
+    },
+    {
+      "id": "105",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "63",
+      "range": "64",
+      "pos": [
+        554.65,
+        1060.53
+      ]
+    },
+    {
+      "id": "106",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "107",
+      "pos": [
+        -444.75,
+        -550.73
+      ]
+    },
+    {
+      "id": "108",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "44",
+      "range": "64",
+      "pos": [
+        438.28,
+        1034.04
+      ]
+    },
+    {
+      "id": "109",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "107",
+      "range": "7",
+      "pos": [
+        -648.48,
+        -99.49
+      ]
+    },
+    {
+      "id": "110",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "90",
+      "range": "7",
+      "pos": [
+        -742.14,
+        -3.21
+      ]
+    },
+    {
+      "id": "111",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "25",
+      "range": "7",
+      "pos": [
+        -638.84,
+        345.14
+      ]
+    },
+    {
+      "id": "112",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "6",
+      "range": "7",
+      "pos": [
+        -752.93,
+        363.89
+      ]
+    },
+    {
+      "id": "113",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "100",
+      "pos": [
+        676.66,
+        59.75
+      ]
+    },
+    {
+      "id": "114",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "72",
+      "pos": [
+        401.25,
+        216.97
+      ]
+    },
+    {
+      "id": "115",
+      "iri": "http://purl.obolibrary.org/obo/increased_expression",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "increased_expression",
+        "undefined": "increased expression"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "49",
+      "pos": [
+        948.47,
+        180.43
+      ]
+    },
+    {
+      "id": "116",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "61",
+      "pos": [
+        526.2,
+        188.37
+      ]
+    },
+    {
+      "id": "117",
+      "iri": "http://purl.obolibrary.org/obo/has_procedure",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_procedure",
+        "undefined": "has procedure"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "4",
+      "pos": [
+        794.98,
+        547.52
+      ]
+    },
+    {
+      "id": "118",
+      "iri": "http://purl.obolibrary.org/obo/has_procedure",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_procedure",
+        "undefined": "has procedure"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "15",
+      "pos": [
+        872.19,
+        485.2
+      ]
+    },
+    {
+      "id": "119",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "63",
+      "pos": [
+        670.73,
+        610.28
+      ]
+    },
+    {
+      "id": "120",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "44",
+      "pos": [
+        554.36,
+        583.79
+      ]
+    },
+    {
+      "id": "121",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "41",
+      "pos": [
+        637.34,
+        109.87
+      ]
+    },
+    {
+      "id": "122",
+      "iri": "http://purl.obolibrary.org/obo/has_symptom",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "has_symptom",
+        "undefined": "has symptom"
+      },
+      "attributes": [
+        "someValues",
+        "external",
+        "object"
+      ],
+      "domain": "12",
+      "range": "31",
+      "pos": [
+        803.32,
+        110.77
+      ]
+    }
+  ]
+}
