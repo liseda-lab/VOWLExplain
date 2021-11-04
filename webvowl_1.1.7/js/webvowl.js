@@ -125,6 +125,7 @@ webvowl =
 	nodes.push(__webpack_require__(34));
 	nodes.push(__webpack_require__(38));
 	nodes.push(__webpack_require__(39));
+	nodes.push(__webpack_require__(319));
 
 	var map = d3.map(nodes, function ( Prototype ){
 	  return new Prototype().type();
@@ -175,6 +176,8 @@ webvowl =
 	  
 	  var o = function ( graph ){
 	    BaseNode.apply(this, arguments);
+		//console.log(this)
+		//console.log(arguments)
 	    
 	    var that = this,
 	      collapsible = false,
@@ -763,7 +766,7 @@ webvowl =
 	      }
 	      
 	      cssClasses = cssClasses.concat(that.visualAttributes());
-	      
+	      //console.log(cssClasses);
 	      return cssClasses;
 	    };
 	    
@@ -1467,14 +1470,16 @@ webvowl =
 	   * @returns {*}
 	   */
 	  tools.appendCircularClass = function ( parent, radius, cssClasses, tooltip, backgroundColor ){
+		//console.log(parent);
 	    var circle = parent.append("circle")
 	      .classed("class", true)
 	      .attr("r", radius);
-	    
+		//console.log(circle);
+	    //console.log(parent);
 	    addCssClasses(circle, cssClasses);
 	    addToolTip(circle, tooltip);
 	    addBackgroundColor(circle, backgroundColor);
-	    
+	    //console.log(circle);
 	    return circle;
 	  };
 	  
@@ -1523,6 +1528,28 @@ webvowl =
 	    return rectangle;
 	  };
 	  
+	  /**
+	   * Append an oval node with the passed attributes.
+	   * @param parent the parent element to which the circle will be appended
+	   * @param radius
+	   * @param [cssClasses] an array of additional css classes
+	   * @param [tooltip]
+	   * @param [backgroundColor]
+	   * @returns {*}
+	   */
+	   tools.appendOvalClass = function ( parent, radius_x, radius_y, cssClasses, tooltip, backgroundColor ){
+	    var oval = parent.append("ellipse")
+	      .classed("class", true)
+	      .attr("rx", radius_x)
+		  .attr("ry", radius_y);
+	    
+	    addCssClasses(oval, cssClasses);
+	    addToolTip(oval, tooltip);
+	    addBackgroundColor(oval, backgroundColor);
+	    
+	    return oval;
+	  };
+
 	  tools.drawPin = function ( container, dx, dy, onClick, accuraciesHelperFunction, useAccuracyHelper ){
 	    var pinGroupElement = container
 	      .append("g")
@@ -1648,6 +1675,42 @@ webvowl =
 	    
 	    return haloGroupElement;
 	  };
+
+	  tools.drawOvalHalo = function ( container, radius_x, radius_y ){
+	    if ( container === undefined ) {
+	      return null;
+	      // there is no element to add the halo to;
+	      // this means the node was not rendered previously
+	    }
+	    var haloGroupElement = container
+	      .append("g")
+	      .classed("hidden-in-export", true);
+	    
+	    
+	    haloGroupElement.append("ellipse", ":first-child")
+	      .classed("searchResultA", true)
+	      .attr("rx", radius_x)
+		  .attr("ry", radius_y);
+	    haloGroupElement.attr("animationRunning", true);
+	    
+	    
+	    haloGroupElement.node().addEventListener("webkitAnimationEnd", function (){
+	      var test = haloGroupElement.selectAll(".searchResultA");
+	      test.classed("searchResultA", false)
+	        .classed("searchResultB", true)
+	        .attr("animationRunning", false);
+	      haloGroupElement.attr("animationRunning", false);
+	    });
+	    haloGroupElement.node().addEventListener("animationend", function (){
+	      var test = haloGroupElement.selectAll(".searchResultA");
+	      test.classed("searchResultA", false)
+	        .classed("searchResultB", true)
+	        .attr("animationRunning", false);
+	      haloGroupElement.attr("animationRunning", false);
+	    });
+	    
+	    return haloGroupElement;
+	  };
 	  
 	  return function (){
 	    // Encapsulate into function to maintain default.module.path()
@@ -1734,6 +1797,7 @@ webvowl =
 	  
 	  var o = function ( graph ){
 	    RoundNode.apply(this, arguments);
+		//OvalNode.apply(this, arguments);
 	    
 	    var that = this,
 	      superHoverHighlightingFunction = that.setHoverHighlighting,
@@ -1794,6 +1858,7 @@ webvowl =
 	    };
 	  };
 	  o.prototype = Object.create(RoundNode.prototype);
+	  //o.prototype = Object.create(OvalNode.prototype);
 	  o.prototype.constructor = o;
 	  
 	  return o;
@@ -2943,6 +3008,7 @@ webvowl =
 	properties.push(__webpack_require__(54));
 	properties.push(__webpack_require__(55));
 	properties.push(__webpack_require__(56));
+	properties.push(__webpack_require__(321)); //for "InstanceOf"
 
 	var map = d3.map(properties, function ( Prototype ){
 	  return new Prototype().type();
@@ -4630,6 +4696,7 @@ webvowl =
 	  
 	  // Returns the visible nodes
 	  graph.graphNodeElements = function (){
+		//console.log(nodeElements); undefined
 	    return nodeElements;
 	  };
 	  // Returns the visible Label Nodes
@@ -12596,7 +12663,7 @@ webvowl =
 	    drawPropertyDraggerOnHover = true,
 	    showDraggerObject = false,
 	    directInputModule,
-	    scaleNodesByIndividuals = true,
+	    scaleNodesByIndividuals = true, //mudei para false mas nao alterou nada
 	    useAccuracyHelper = true,
 	    showRenderingStatistic = true,
 	    showInputModality = false,
@@ -13410,6 +13477,9 @@ webvowl =
 	   * @param ontologyData the loaded ontology json file
 	   */
 	  parser.parse = function ( ontologyData ){
+		//if theres no ontology data, return empty nodes and properties
+		//ontologyData is the whole ontology data
+		//console.log(ontologyData)
 	    if ( !ontologyData ) {
 	      nodes = [];
 	      properties = [];
@@ -13420,16 +13490,20 @@ webvowl =
 	    if ( ontologyData.settings ) settingsData = ontologyData.settings;
 	    else settingsData = undefined;
 	    
-	    var classes = combineClasses(ontologyData.class, ontologyData.classAttribute),
+	    var classes = combineClasses(ontologyData.class, ontologyData.classAttribute), //includes individuals
 	      datatypes = combineClasses(ontologyData.datatype, ontologyData.datatypeAttribute),
+		  //individuals = combineClasses(ontologyData.classAttribute.individuals),
 	      combinedClassesAndDatatypes = classes.concat(datatypes),
 	      unparsedProperties = ontologyData.property || [],
 	      combinedProperties;
-	    
 	    // Inject properties for unions, intersections, ...
 	    addSetOperatorProperties(combinedClassesAndDatatypes, unparsedProperties);
+		//console.log(unparsedProperties);
 	    combinedProperties = combineProperties(unparsedProperties, ontologyData.propertyAttribute);
-	    classMap = mapElements(combinedClassesAndDatatypes);
+		//console.log(combinedProperties);
+	    classMap = mapElements(combinedClassesAndDatatypes); 
+		//console.log(classMap);//includes individuals, but as undefined, the rest is numbered by ID
+							  //individuals don't have ids, what to do?
 	    propertyMap = mapElements(combinedProperties);
 	    mergeRangesOfEquivalentProperties(combinedProperties, combinedClassesAndDatatypes);
 	    
@@ -13438,6 +13512,7 @@ webvowl =
 	    convertTypesToIris(combinedProperties, ontologyData.namespace);
 	    nodes = createNodeStructure(combinedClassesAndDatatypes, classMap);
 	    properties = createPropertyStructure(combinedProperties, classMap, propertyMap);
+		//console.log(nodes); //includes individuals
 	  };
 	  
 	  /**
@@ -13461,11 +13536,17 @@ webvowl =
 	  function combineClasses( baseObjects, attributes ){
 	    var combinations = [];
 	    var prototypeMap = createLowerCasePrototypeMap(nodePrototypeMap);
-	    
+		//console.log(prototypeMap); includes individuals
+	    //BaseObject will be class and datatype, from the two times the function is called
+		//Each iteration of base object is an element
 	    if ( baseObjects ) {
+		  //console.log(baseObjects)
+		  //console.log(attributes)
 	      baseObjects.forEach(function ( element ){
+			//console.log(element)
 	        var matchingAttribute;
 	        
+			//individuals are included in the attributes
 	        if ( attributes ) {
 	          // Look for an attribute with the same id and merge them
 	          for ( var i = 0; i < attributes.length; i++ ) {
@@ -13479,12 +13560,17 @@ webvowl =
 	        }
 	        
 	        // Then look for a prototype to add its properties
-	        var Prototype = prototypeMap.get(element.type.toLowerCase());
-	        
+			//This part won't work for individuals
+			//console.log(element.type.toLowerCase());
+	        var Prototype = prototypeMap.get(element.type.toLowerCase()); //aqui escolhe-se a funçao prototype adequada ao tipo
+																		  //do elemento (owl:class)
+	        //console.log(prototypeMap)
+			//console.log(Prototype)
 	        if ( Prototype ) {
 	          addAdditionalAttributes(element, Prototype); // TODO might be unnecessary
-	          
-	          var node = new Prototype(graph);
+	          //console.log(graph)
+	          var node = new Prototype(graph); //This will execute the respective prototype function, depending on the node
+			  //console.log(node)
 	          node.annotations(element.annotations)
 	            .baseIri(element.baseIri)
 	            .comment(element.comment)
@@ -13498,6 +13584,7 @@ webvowl =
 	            // .type(element.type) Ignore, because we predefined it
 	            .union(element.union)
 	            .iri(element.iri);
+			//console.log(node)
 	          if ( element.pos ) {
 	            node.x = element.pos[0];
 	            node.y = element.pos[1];
@@ -13510,14 +13597,25 @@ webvowl =
 	            node.pinned(true);
 	            graph.options().pickAndPinModule().addPinnedElement(node);
 	          }
+			  //console.log(node);
 	          // Create node objects for all individuals
 	          if ( element.individuals ) {
+				//console.log(element.individuals);
+				//console.log(node.individuals());
 	            element.individuals.forEach(function ( individual ){
-	              var individualNode = new Prototype(graph);
+				  var individualPrototype = prototypeMap.get("individual");
+				  //console.log(individualPrototype);
+	              var individualNode = new individualPrototype(graph);
+				  //console.log(individualNode);
+				  //console.log(individualNode.label);
 	              individualNode.label(individual.labels)
 	                .iri(individual.iri);
-	              
-	              node.individuals().push(individualNode);
+	              //console.log(individualNode);
+				  //console.log(individualNode.label);
+
+	              node.individuals().push(individualNode); //adding the individual nodes to the "main" one! creates object
+				  combinations.push(individualNode);
+				  //console.log(node.individuals());
 	            });
 	          }
 	          
@@ -13531,14 +13629,14 @@ webvowl =
 	        }
 	      });
 	    }
-	    
-	    return combinations;
+	    //console.log(combinations);
+	    return combinations; //Now includes individual nodes!!!!
 	  }
 	  
 	  function combineProperties( baseObjects, attributes ){
 	    var combinations = [];
 	    var prototypeMap = createLowerCasePrototypeMap(propertyPrototypeMap);
-	    
+	    //console.log(prototypeMap);
 	    if ( baseObjects ) {
 	      baseObjects.forEach(function ( element ){
 	        var matchingAttribute;
@@ -13591,7 +13689,29 @@ webvowl =
 	            property.pinned(true);
 	            graph.options().pickAndPinModule().addPinnedElement(property);
 	          }
-	          
+	         
+			  //Creating properties for individuals
+			  // Properties do not have individuals...
+			  //Have to go to classes, does it make sense to be inside this function?
+			  /* if ( element.individuals ) {
+				console.log(element.individuals);
+				console.log(property.individuals());
+	            element.individuals.forEach(function ( individual ){
+				  var individualPrototype = prototypeMap.get("individual");
+				  //console.log(individualPrototype);
+	              var individualProperty = new individualPrototype(graph); //individualNode will be individualProperty
+				  //console.log(individualNode);
+				  //console.log(individualNode.label);
+	              individualProperty.label(individual.labels)
+	                .iri(individual.iri);
+	              //console.log(individualProperty);
+				  //console.log(individualProperty.label);
+
+	              property.individuals().push(individualProperty); //adding the individual nodes to the "main" one! creates object
+				  combinations.push(individualProperty);
+				  //console.log(node.individuals());
+	            });
+	          } */
 	          
 	          if ( element.attributes ) {
 	            var deduplicatedAttributes = d3.set(element.attributes.concat(property.attributes()));
@@ -13633,6 +13753,7 @@ webvowl =
 	   */
 	  function createNodeStructure( rawNodes, classMap ){
 	    var nodes = [];
+		//console.log(rawNodes); //includes individuals
 	    
 	    // Set the default values
 	    var maxIndividualCount = 0;
@@ -13656,8 +13777,8 @@ webvowl =
 	        nodes.push(node);
 	      }
 	    });
-	    
-	    return nodes;
+	    //console.log(nodes);
+	    return nodes; //includes individuals
 	  }
 	  
 	  /**
@@ -13934,11 +14055,16 @@ webvowl =
 	   * @param namespaces an array of namespaces
 	   */
 	  function convertTypesToIris( elements, namespaces ){
+		//console.log(elements);
+		//console.log(namespaces);
 	    elements.forEach(function ( element ){
 	      if ( typeof element.iri() === "string" ) {
 	        element.iri(replaceNamespace(element.iri(), namespaces));
 	      }
 	    });
+		//console.log(elements);
+		//console.log(namespaces);
+
 	  }
 	  
 	  /**
@@ -13950,6 +14076,8 @@ webvowl =
 	    var map = {};
 	    for ( var i = 0, length = array.length; i < length; i++ ) {
 	      var element = array[i];
+		  //console.log(element);
+		  //console.log(element.id())
 	      map[element.id()] = element;
 	    }
 	    return map;
@@ -24999,16 +25127,20 @@ webvowl =
 	    classCount = 0;
 	    var old = 0, newcc = 0;
 	    classesAndDatatypes.forEach(function ( node ){
+		  //console.log(node);
 	      if ( elementTools.isDatatype(node) ) {
 	        datatypeSet.add(node.defaultLabel());
 	      } else if ( !(node instanceof SetOperatorNode) ) {
+			//console.log(node);
 	        if ( node instanceof OwlThing ) {
 	          hasThing = true;
 	        } else if ( node instanceof OwlNothing ) {
 	          hasNothing = true;
 	        } else {
 	          old = classCount;
-	          var adds = 1 + countElementArray(node.equivalents());
+			  //console.log(countElementArray(node.equivalents()));
+			  //console.log(countElementArray(node.individuals()));
+	          var adds = 1 + countElementArray(node.equivalents()) - countElementArray(node.individuals());
 	          classCount += adds;
 	          newcc = classCount;
 	        }
@@ -25341,5 +25473,358 @@ webvowl =
 	};
 
 
+/***/ }),
+
+/* 319 */
+ /***/ (function(module, exports, __webpack_require__) {
+
+ 	var OvalNode = __webpack_require__(320);
+
+ 	module.exports = (function (){
+	  
+ 	  var o = function ( graph ){
+ 	    OvalNode.apply(this, arguments);
+	    
+ 	    this.individuals([]).type("Individual");
+ 	  };
+ 	  o.prototype = Object.create(OvalNode.prototype);
+ 	  o.prototype.constructor = o;
+	  
+ 	  return o;
+ 	}());
+/***/ }),
+
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var BaseNode = __webpack_require__(9);
+	var CenteringTextElement = __webpack_require__(14);
+	var drawTools = __webpack_require__(17)();
+
+	module.exports = (function (){
+	  
+	  var o = function ( graph ){
+	    BaseNode.apply(this, arguments);
+	    
+	    var that = this,
+	      collapsible = false,
+		  radius = 50,
+	      radius_x = 45,
+		  radius_y = 35,
+	      collapsingGroupElement,
+	      pinGroupElement,
+	      haloGroupElement = null,
+	      rectangularRepresentation = false,
+		  ovalRepresentation = true,
+	      renderingElement,
+	      textBlock;
+	    
+	    
+	    this.getHalos = function (){
+	      return haloGroupElement;
+	    };
+	    
+	    // Properties
+	    this.collapsible = function ( p ){
+	      if ( !arguments.length ) return collapsible;
+	      collapsible = p;
+	      return this;
+	    };
+	    
+	    this.textBlock = function ( p ){
+	      if ( !arguments.length ) return textBlock;
+	      textBlock = p;
+	      return this;
+	    };
+	    
+	    /**
+	     * This might not be equal to the actual radius, because the instance count is used for its calculation.
+	     * @param p
+	     * @returns {*}
+	     */
+	    this.radius = function ( p ){
+	      if ( !arguments.length ) return radius;
+	      radius = p;
+	      return this;
+	    };
+	    
+	    
+	    // Functions
+	    this.setHoverHighlighting = function ( enable ){
+	      that.nodeElement().selectAll("ellipse").classed("hovered", enable);
+	    };
+	    
+	    this.textWidth = function ( yOffset ){
+	      var availableWidth = this.actualRadius() * 2;
+	      
+	      // if the text is not placed in the center of the circle, it can't have the full width
+	      if ( yOffset ) {
+	        var relativeOffset = Math.abs(yOffset) / this.actualRadius();
+	        var isOffsetInsideOfNode = relativeOffset <= 1;
+	        
+	        if ( isOffsetInsideOfNode ) {
+	          availableWidth = Math.cos(relativeOffset) * availableWidth;
+	        } else {
+	          availableWidth = 0;
+	        }
+	      }
+	      
+	      return availableWidth;
+	    };
+	    
+	    this.toggleFocus = function (){
+	      that.focused(!that.focused());
+	      if ( that.nodeElement() )
+	        that.nodeElement().select("oval").classed("focused", that.focused());
+	      graph.resetSearchHighlight();
+	      graph.options().searchMenu().clearText();
+	      
+	    };
+	    
+	    this.actualRadius = function (){
+	      if ( !graph.options().scaleNodesByIndividuals() || that.individuals().length <= 0 ) {
+	        return that.radius();
+	      } else {
+	        // we could "listen" for radius and maxIndividualCount changes, but this is easier
+	        var MULTIPLIER = 8,
+	          additionalRadius = Math.log(that.individuals().length + 1) * MULTIPLIER + 5;
+	        
+	        return that.radius() + additionalRadius;
+	      }
+	    };
+	    
+	    this.distanceToBorder = function (){
+	      return that.actualRadius();
+	    };
+	    
+	    this.removeHalo = function (){
+	      if ( that.halo() ) {
+	        that.halo(false);
+	        if ( haloGroupElement ) {
+	          haloGroupElement.remove();
+	        }
+	      }
+	    };
+	    
+	    this.drawHalo = function ( pulseAnimation ){
+	      that.halo(true);
+
+		  haloGroupElement = drawTools.drawOvalHalo(that.nodeElement(), radius_x, radius_y, this.removeHalo);
+
+	      if ( pulseAnimation === false ) {
+	        var pulseItem = haloGroupElement.selectAll(".searchResultA");
+	        pulseItem.classed("searchResultA", false);
+	        pulseItem.classed("searchResultB", true);
+	        pulseItem.attr("animationRunning", false);
+	      }
+	    };
+	    
+	    /**
+	     * Draws the pin on a round node on a position depending on its radius.
+	     */
+	    this.drawPin = function (){
+	      that.pinned(true);
+	      var dx = (-3.5 / 5) * that.actualRadius(),
+	        dy = (-7 / 10) * that.actualRadius();
+	      pinGroupElement = drawTools.drawPin(that.nodeElement(), dx, dy, this.removePin, graph.options().showDraggerObject, graph.options().useAccuracyHelper());
+	      
+	      
+	    };
+	    
+	    /**
+	     * Removes the pin and refreshs the graph to update the force layout.
+	     */
+	    this.removePin = function (){
+	      that.pinned(false);
+	      if ( pinGroupElement ) {
+	        pinGroupElement.remove();
+	      }
+	      graph.updateStyle();
+	    };
+	    
+	    this.drawCollapsingButton = function (){
+	      
+	      collapsingGroupElement = that.nodeElement()
+	        .append("g")
+	        .classed("hidden-in-export", true)
+	        .attr("transform", function (){
+	          var dx = (-2 / 5) * that.actualRadius(),
+	            dy = (1 / 2) * that.actualRadius();
+	          return "translate(" + dx + "," + dy + ")";
+	        });
+	      
+	      collapsingGroupElement.append("rect")
+	        .classed("class pin feature", true)
+	        .attr("x", 0)
+	        .attr("y", 0)
+	        .attr("width", 40)
+	        .attr("height", 24);
+	      
+	      collapsingGroupElement.append("line")
+	        .attr("x1", 13)
+	        .attr("y1", 12)
+	        .attr("x2", 27)
+	        .attr("y2", 12);
+	      
+	      collapsingGroupElement.append("line")
+	        .attr("x1", 20)
+	        .attr("y1", 6)
+	        .attr("x2", 20)
+	        .attr("y2", 18);
+	    };
+	    
+	    /**
+	     * Draws a circular node.
+	     * @param parentElement the element to which this node will be appended
+	     * @param [additionalCssClasses] additional css classes
+	     */
+	    this.draw = function ( parentElement, additionalCssClasses ){
+	      var cssClasses = that.collectCssClasses();
+	      that.nodeElement(parentElement);
+	      
+	      var bgColor = that.backgroundColor();
+	      if ( bgColor === null ) bgColor = undefined;
+	      if ( that.attributes().indexOf("deprecated") > -1 ) {
+	        bgColor = undefined;
+	      }
+	      if ( additionalCssClasses instanceof Array ) {
+	        cssClasses = cssClasses.concat(additionalCssClasses);
+	      }
+	      if ( rectangularRepresentation === true ) {
+	        renderingElement = drawTools.appendRectangularClass(parentElement, 80, 80, cssClasses, that.labelForCurrentLanguage(), bgColor);
+		  } else if (ovalRepresentation == true){
+			renderingElement = drawTools.appendOvalClass(parentElement, radius_x, radius_y, cssClasses, that.labelForCurrentLanguage(), bgColor);
+		  } else {
+	        renderingElement = drawTools.appendCircularClass(parentElement, that.actualRadius(), cssClasses, that.labelForCurrentLanguage(), bgColor);
+	      }
+	      that.postDrawActions(parentElement);
+	    };
+	    
+	    this.redrawElement = function (){
+	      renderingElement.remove();
+	      textBlock.remove();
+	      var bgColor = that.backgroundColor();
+	      if ( that.attributes().indexOf("deprecated") > -1 ) {
+	        bgColor = undefined;
+	      }
+	      
+	      var cssClasses = that.collectCssClasses();
+	      
+	      if ( rectangularRepresentation === true ) {
+	        renderingElement = drawTools.appendRectangularClass(that.nodeElement(), 80, 80, cssClasses, that.labelForCurrentLanguage(), bgColor);
+		  } else if (ovalRepresentation == true){
+			renderingElement = drawTools.appendOvalClass(parentElement, radius_x, radius_y, cssClasses, that.labelForCurrentLanguage(), bgColor);
+		  } else {
+	        renderingElement = drawTools.appendCircularClass(that.nodeElement(), that.actualRadius(), cssClasses, that.labelForCurrentLanguage(), bgColor);
+	      }
+	      that.postDrawActions(that.nodeElement());
+	    };
+	    /**
+	     * Common actions that should be invoked after drawing a node.
+	     */
+	    this.postDrawActions = function (){
+	      that.textBlock(createTextBlock());
+	      
+	      that.addMouseListeners();
+	      if ( that.pinned() ) {
+	        that.drawPin();
+	      }
+	      if ( that.halo() ) {
+	        that.drawHalo(false);
+	      }
+	      if ( that.collapsible() ) {
+	        that.drawCollapsingButton();
+	      }
+	    };
+	    
+	    this.redrawLabelText = function (){
+	      that.textBlock().remove();
+	      that.textBlock(createTextBlock());
+	      renderingElement.select("title").text(that.labelForCurrentLanguage());
+	    };
+	    function createTextBlock(){
+	      var bgColor = that.backgroundColor();
+	      if ( that.attributes().indexOf("deprecated") > -1 )
+	        bgColor = undefined;
+	      
+	      var textBlock = new CenteringTextElement(that.nodeElement(), bgColor);
+	      
+	      var equivalentsString = that.equivalentsString();
+	      var suffixForFollowingEquivalents = equivalentsString ? "," : "";
+	      
+	      textBlock.addText(that.labelForCurrentLanguage(), "", suffixForFollowingEquivalents);
+	      textBlock.addEquivalents(equivalentsString);
+	      if ( !graph.options().compactNotation() ) {
+	        textBlock.addSubText(that.indicationString());
+	      }
+	      textBlock.addInstanceCount(that.individuals().length);
+	      
+	      return textBlock;
+	    }
+	    
+	    this.equivalentsString = function (){
+	      var equivalentClasses = that.equivalents();
+	      if ( !equivalentClasses ) {
+	        return;
+	      }
+	      
+	      return equivalentClasses
+	        .map(function ( node ){
+	          return node.labelForCurrentLanguage();
+	        })
+	        .join(", ");
+	    };
+	  };
+	  o.prototype = Object.create(BaseNode.prototype);
+	  o.prototype.constructor = o;
+	  
+	  return o;
+	}());
+
+
+/***/ }),
+
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var BaseProperty = __webpack_require__(42);
+
+	module.exports = (function (){
+	  
+	  var o = function ( graph ){
+	    BaseProperty.apply(this, arguments);
+	    
+	    var that = this,
+	      superDrawFunction = that.draw,
+	      label = "Instance Of";
+	    
+	    this.draw = function ( labelGroup ){
+	      that.labelVisible(!graph.options().compactNotation());
+	      return superDrawFunction(labelGroup);
+	    };
+	    
+	    // Disallow overwriting the label
+	    this.label = function ( p ){
+	      if ( !arguments.length ) return label;
+	      return this;
+	    };
+	    
+	    this.linkType("dotted")
+	      .markerType("white")
+	      .styleClass("subclass")
+	      .type("InstanceOf");
+	    
+	    that.baseIri("http://www.w3.org/2000/01/rdf-schema#");  //change?
+	    that.iri("http://www.w3.org/2000/01/rdf-schema#subClassOf");  //change?
+	    
+	  };
+	  o.prototype = Object.create(BaseProperty.prototype);
+	  o.prototype.constructor = o;
+	  
+	  return o;
+	}());
+
+
 /***/ })
+
 /******/ ]);
