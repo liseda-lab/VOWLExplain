@@ -1,2 +1,1 @@
-# Demonstrador fic.a
-Contém a versão do webvowls adaptada para o festival, com os logos da FCUL e do LASIGE e o ficheiro com a ontologia criada.
+This is an edited version of the WebVOWL tool, where some of the goals are to visualize individuals, as well as their connections to their respective class and other individuals. The final goals of this extended tool is to help in the visualization of explanations for artificial intelligence, specially in the medical field.
