@@ -25575,7 +25575,7 @@ webvowl =
 	    this.toggleFocus = function (){
 	      that.focused(!that.focused());
 	      if ( that.nodeElement() )
-	        that.nodeElement().select("oval").classed("focused", that.focused());
+	        that.nodeElement().select("ellipse").classed("focused", that.focused());
 	      graph.resetSearchHighlight();
 	      graph.options().searchMenu().clearText();
 	      
