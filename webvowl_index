@@ -69,9 +69,35 @@ função
 
 40: propertyPrototypeMap
 
+41: OwlAllValuesFromProperty
+
 43: math
 
-46: elements/properties/implementations/OwlDisjointWith
+44: OwlDatatypeProperty
+
+45: OwlDeprecatedProperty
+
+46: OwlDisjointWith
+
+47: OwlEquivalentProperty
+
+48: OwlFunctionalProperty
+
+49: OwlInverseFunctionalProperty
+
+50: OwlObjectProperty
+
+51: OwlSomeValuesFromProperty
+
+52: OwlSymmetricProperty
+
+53: OwlTransitiveProperty
+
+54: RdfProperty
+
+55: RdfsSubClassOf
+
+56: SetOperatorProperty
 
 57: graph.js
 onde função parser está a ser usada, fornecendo o argumento "graph"
@@ -154,3 +180,5 @@ inclui:
 draw function that draws a circular node
 	utiliza:
 	drawTools.appendCircularClass
+
+321: InstanceOf
