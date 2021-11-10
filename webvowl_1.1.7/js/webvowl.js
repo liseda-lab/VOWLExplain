@@ -13599,7 +13599,7 @@ webvowl =
 	          }
 			  //console.log(node);
 	          // Create node objects for all individuals
-	          if ( element.individuals ) {
+	          /* if ( element.individuals ) {
 				//console.log(element.individuals);
 				//console.log(node.individuals());
 	            element.individuals.forEach(function ( individual ){
@@ -13617,7 +13617,7 @@ webvowl =
 				  combinations.push(individualNode);
 				  //console.log(node.individuals());
 	            });
-	          }
+	          } */
 	          
 	          if ( element.attributes ) {
 	            var deduplicatedAttributes = d3.set(element.attributes.concat(node.attributes()));

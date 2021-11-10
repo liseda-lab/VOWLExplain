@@ -1,0 +1,550 @@
+{ "comment": "Suggested new elements to implement",
+  
+  "class" : [
+  { "id": "x",
+    "type": "Individual"}
+ ],
+
+ "classAttribute": [
+  { "iri": "http://purl.obolibrary.org/obo/Patient1",
+    "baseIri": "http://purl.obolibrary.org/obo/",
+    "label": {
+      "IRI-based": "Patient1",
+      "en": "Patient 1"
+    },
+    "attributes" : "?",
+    "motherClass" : "13",
+    "id": "x"
+  }
+ ],
+
+ "property": [
+  {
+    "id": "x13",
+    "type": "instanceOf"
+  },   
+  {
+  "id" : "xy",
+  "type" : "owl:objectProperty"
+  }
+ ],
+
+ "propertyAttribute": [
+  { "range": "13",
+    "domain": "x",
+    "attributes": [ "?" ],
+    "id": "x13"
+  },
+  {
+    "iri" : "http://purl.obolibrary.org/obo/has_procedure",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "x",
+    "label" : {
+      "IRI-based" : "has_procedure",
+      "undefined" : "has procedure"
+    },
+    "domain" : "y",
+    "attributes" : [ "external", "object" ],
+    "id" : "xy"
+  } ]
+
+}
+
+
+{ "_comment": "More complete structure suggestion based on the two references (original owl2vowl and transformed by webvowl exporter, below)",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://fica.path",
+      "http://purl.obolibrary.org/obo",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://fic.a"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12"
+  },
+
+  "class": [
+    { "id": "x"
+      "type": "Individual"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+  ],
+
+
+  "classAttribute": [
+    
+    { "iri": "http://purl.obolibrary.org/obo/Patient3",
+      "baseIri": "http://purl.obolibrary.org/obo/",
+      "label": {
+        "IRI-based": "Patient3",
+        "en": "Patient 3"
+      },
+      "attributes" : "?",
+      "motherClass" : "13",
+      "id": "z"
+    },
+    { "iri": "http://purl.obolibrary.org/obo/Patient2",
+      "baseIri": "http://purl.obolibrary.org/obo/",
+      "label": {
+        "IRI-based": "Patient2",
+        "en": "Patient 2"
+      },
+      "attributes" : "?",
+      "motherClass" : "13",
+      "id": "y"
+    },
+    { "iri": "http://purl.obolibrary.org/obo/Patient1",
+      "baseIri": "http://purl.obolibrary.org/obo/",
+      "label": {
+        "IRI-based": "Patient1",
+        "en": "Patient 1"
+      },
+      "attributes" : "?",
+      "motherClass" : "13",
+      "id": "x"
+    },
+    {
+      "iri" : "http://purl.obolibrary.org/obo/patient",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "instances" : 0,
+      "label" : {
+        "IRI-based" : "patient",
+        "en" : "Patient"
+      },
+      "individuals" : [ {
+        "iri" : "http://purl.obolibrary.org/obo/Patient3",
+        "baseIri" : "http://purl.obolibrary.org/obo",
+        "labels" : {
+          "IRI-based" : "Patient3"
+        }
+      }, {
+        "iri" : "http://purl.obolibrary.org/obo/Patient2",
+        "baseIri" : "http://purl.obolibrary.org/obo",
+        "labels" : {
+          "IRI-based" : "Patient2"
+        }
+      }, {
+        "iri" : "http://purl.obolibrary.org/obo/Patient1",
+        "baseIri" : "http://purl.obolibrary.org/obo",
+        "labels" : {
+          "IRI-based" : "Patient1"
+        }
+      } ],
+      "subClasses" : [ "12" ],
+      "attributes" : [ "external" ],
+      "id" : "13",
+      "superClasses" : [ "87" ]
+    } ],
+
+
+    "property": [
+      {
+        "id": "3",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "118",
+        "type": "owl:someValuesFrom"
+      },
+      {
+         "id": "x13",
+         "type": "instanceOf"
+      },
+      {
+        "id" : "xy",
+        "type" : "owl:objectProperty"
+      },],
+
+
+      "propertyAttribute": [
+        { "range": "13",
+          "domain": "x",
+          "attributes": [ ? ],
+          "id": "x13",
+        },
+        {
+          "id": "43",
+          "iri": "http://purl.obolibrary.org/obo/has_role",
+          "baseIri": "http://purl.obolibrary.org/obo",
+          "label": {
+            "IRI-based": "has_role",
+            "undefined": "has role"
+          },
+          "attributes": [
+            "external",
+            "object",
+            "someValues"
+          ],
+          "domain": "44",
+          "range": "45",
+        },
+        {
+          "iri" : "http://purl.obolibrary.org/obo/has_procedure",
+          "baseIri" : "http://purl.obolibrary.org/obo",
+          "range" : "12",
+          "label" : {
+            "IRI-based" : "has_procedure",
+            "undefined" : "has procedure"
+          },
+          "domain" : "12",
+          "attributes" : [ "external", "object" ],
+          "id" : "xm"
+        },
+      
+      ]
+}
+
+
+
+{"_comment" : "Created with OWL2VOWL original",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://fica.path", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://fic.a" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12"
+  },
+  "namespace" : [ ],
+
+
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, 
+  {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+
+
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/HP_0000014",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HP_0000014",
+      "undefined" : "Abnormality of the bladder"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, 
+  {
+    "iri" : "http://purl.obolibrary.org/obo/patient",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "patient",
+      "en" : "Patient"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/Patient3",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "Patient3"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/Patient2",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "Patient2"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/Patient1",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "Patient1"
+      }
+    } ],
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "87" ]
+  }],
+
+
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, 
+  {
+    "id" : "43",
+    "type" : "owl:someValuesFrom"
+  }],
+
+
+  "propertyAttribute" : [ 
+    {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+    },
+    {
+    "iri" : "http://purl.obolibrary.org/obo/has_role",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "has_role",
+      "undefined" : "has role"
+    },
+    "domain" : "44",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "43"
+    }
+  ]
+}
+
+
+
+{"_comment": "Structure created by OWL2VOWL after collapsing (Additional Information added by WebVOWL Exporter)",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://fica.path",
+      "http://purl.obolibrary.org/obo",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://fic.a"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.semanticweb.org/filip/ontologies/2021/8/untitled-ontology-12"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.33",
+      "translation": [
+        324.41,
+        16.73
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": true
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": true
+    }
+  },
+
+
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "type": "Individual"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+  ],
+
+
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://purl.obolibrary.org/obo/HP_0000014",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "HP_0000014",
+        "undefined": "Abnormality of the bladder"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        469.92,
+        1459.15
+      ]
+    },
+    {
+      "iri": "http://purl.obolibrary.org/obo/Patient3",
+      "label": {
+        "IRI-based": "Patient3"
+      }
+    },
+    {
+      "iri": "http://purl.obolibrary.org/obo/Patient2",
+      "label": {
+        "IRI-based": "Patient2"
+      }
+    },
+    {
+      "iri": "http://purl.obolibrary.org/obo/Patient1",
+      "label": {
+        "IRI-based": "Patient1"
+      }
+    },
+    {
+      "id": "13",
+      "iri": "http://purl.obolibrary.org/obo/patient",
+      "baseIri": "http://purl.obolibrary.org/obo",
+      "label": {
+        "IRI-based": "patient",
+        "en": "Patient"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://purl.obolibrary.org/obo/Patient3",
+          "labels": {
+            "IRI-based": "Patient3"
+          }
+        },
+        {
+          "iri": "http://purl.obolibrary.org/obo/Patient2",
+          "labels": {
+            "IRI-based": "Patient2"
+          }
+        },
+        {
+          "iri": "http://purl.obolibrary.org/obo/Patient1",
+          "labels": {
+            "IRI-based": "Patient1"
+          }
+        }
+      ],
+      "pos": [
+        120.5,
+        342.72
+      ]
+    } ],
+
+
+    "property": [
+      {
+        "id": "3",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "118",
+        "type": "owl:someValuesFrom"
+      }],
+
+
+      "propertyAttribute": [
+        {
+          "id": "3",
+          "label": "Subclass of",
+          "attributes": [
+            "object",
+            "anonymous"
+          ],
+          "domain": "4",
+          "range": "5",
+          "pos": [
+            1163.39,
+            136.08
+          ]
+        },
+        {
+          "id": "43",
+          "iri": "http://purl.obolibrary.org/obo/has_role",
+          "baseIri": "http://purl.obolibrary.org/obo",
+          "label": {
+            "IRI-based": "has_role",
+            "undefined": "has role"
+          },
+          "attributes": [
+            "external",
+            "object",
+            "someValues"
+          ],
+          "domain": "44",
+          "range": "45",
+          "pos": [
+            1977.14,
+            1342.95
+          ]
+        }
+     ]
+ }
+
+
+
+
+
