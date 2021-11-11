@@ -13492,25 +13492,30 @@ webvowl =
 	    
 	    var classes = combineClasses(ontologyData.class, ontologyData.classAttribute), //includes individuals
 	      datatypes = combineClasses(ontologyData.datatype, ontologyData.datatypeAttribute),
-		  //individuals = combineClasses(ontologyData.classAttribute.individuals),
-	      combinedClassesAndDatatypes = classes.concat(datatypes),
+		  individuals = combineClasses(ontologyData.individual, ontologyData.individualAttribute),
+		  combinedClassesAndDatatypes = classes.concat(datatypes),
+		  combinedClassesIndividualsAndDatatypes = combinedClassesAndDatatypes.concat(individuals),
 	      unparsedProperties = ontologyData.property || [],
 	      combinedProperties;
+		console.log(classes);
+		console.log(individuals);
+		console.log(combinedClassesAndDatatypes);
+		console.log(combinedClassesIndividualsAndDatatypes);
 	    // Inject properties for unions, intersections, ...
-	    addSetOperatorProperties(combinedClassesAndDatatypes, unparsedProperties);
+	    addSetOperatorProperties(combinedClassesIndividualsAndDatatypes, unparsedProperties);
 		//console.log(unparsedProperties);
 	    combinedProperties = combineProperties(unparsedProperties, ontologyData.propertyAttribute);
 		//console.log(combinedProperties);
-	    classMap = mapElements(combinedClassesAndDatatypes); 
+	    classMap = mapElements(combinedClassesIndividualsAndDatatypes); 
 		//console.log(classMap);//includes individuals, but as undefined, the rest is numbered by ID
 							  //individuals don't have ids, what to do?
 	    propertyMap = mapElements(combinedProperties);
-	    mergeRangesOfEquivalentProperties(combinedProperties, combinedClassesAndDatatypes);
+	    mergeRangesOfEquivalentProperties(combinedProperties, combinedClassesIndividualsAndDatatypes);
 	    
 	    // Process the graph data
-	    convertTypesToIris(combinedClassesAndDatatypes, ontologyData.namespace);
+	    convertTypesToIris(combinedClassesIndividualsAndDatatypes, ontologyData.namespace);
 	    convertTypesToIris(combinedProperties, ontologyData.namespace);
-	    nodes = createNodeStructure(combinedClassesAndDatatypes, classMap);
+	    nodes = createNodeStructure(combinedClassesIndividualsAndDatatypes, classMap);
 	    properties = createPropertyStructure(combinedProperties, classMap, propertyMap);
 		//console.log(nodes); //includes individuals
 	  };
@@ -25485,7 +25490,7 @@ webvowl =
  	  var o = function ( graph ){
  	    OvalNode.apply(this, arguments);
 	    
- 	    this.individuals([]).type("Individual");
+ 	    this.individuals([]).type("owl:NamedIndividual");
  	  };
  	  o.prototype = Object.create(OvalNode.prototype);
  	  o.prototype.constructor = o;
@@ -25825,6 +25830,25 @@ webvowl =
 	}());
 
 
-/***/ })
+/***/ }),
+
+// /* 322 */
+//  /***/ (function(module, exports, __webpack_require__) {
+
+// 	var OvalNode = __webpack_require__(320);
+
+// 	module.exports = (function (){
+	 
+// 	  var o = function ( graph ){
+// 		OvalNode.apply(this, arguments);
+	   
+// 		this.individuals([]).type("owl:NamedIndividual");
+// 	  };
+// 	  o.prototype = Object.create(OvalNode.prototype);
+// 	  o.prototype.constructor = o;
+	 
+// 	  return o;
+// 	}());
+// /***/ }),
 
 /******/ ]);
