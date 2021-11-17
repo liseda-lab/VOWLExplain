@@ -125,7 +125,8 @@ webvowl =
 	nodes.push(__webpack_require__(34));
 	nodes.push(__webpack_require__(38));
 	nodes.push(__webpack_require__(39));
-	nodes.push(__webpack_require__(319));
+	nodes.push(__webpack_require__(319)); //owl:NamedIndividual
+	nodes.push(__webpack_require__(322)); //owl:AnonymousIndividual
 
 	var map = d3.map(nodes, function ( Prototype ){
 	  return new Prototype().type();
@@ -3008,7 +3009,7 @@ webvowl =
 	properties.push(__webpack_require__(54));
 	properties.push(__webpack_require__(55));
 	properties.push(__webpack_require__(56));
-	properties.push(__webpack_require__(321)); //for "InstanceOf"
+	properties.push(__webpack_require__(321)); //for "rdf:type"
 
 	var map = d3.map(properties, function ( Prototype ){
 	  return new Prototype().type();
@@ -13497,10 +13498,10 @@ webvowl =
 		  combinedClassesIndividualsAndDatatypes = combinedClassesAndDatatypes.concat(individuals),
 	      unparsedProperties = ontologyData.property || [],
 	      combinedProperties;
-		console.log(classes);
-		console.log(individuals);
-		console.log(combinedClassesAndDatatypes);
-		console.log(combinedClassesIndividualsAndDatatypes);
+		//console.log(classes);
+		//console.log(individuals);
+		//console.log(combinedClassesAndDatatypes);
+		//console.log(combinedClassesIndividualsAndDatatypes);
 	    // Inject properties for unions, intersections, ...
 	    addSetOperatorProperties(combinedClassesIndividualsAndDatatypes, unparsedProperties);
 		//console.log(unparsedProperties);
@@ -13548,7 +13549,7 @@ webvowl =
 		  //console.log(baseObjects)
 		  //console.log(attributes)
 	      baseObjects.forEach(function ( element ){
-			//console.log(element)
+			//console.log(element);
 	        var matchingAttribute;
 	        
 			//individuals are included in the attributes
@@ -13569,8 +13570,8 @@ webvowl =
 			//console.log(element.type.toLowerCase());
 	        var Prototype = prototypeMap.get(element.type.toLowerCase()); //aqui escolhe-se a funçao prototype adequada ao tipo
 																		  //do elemento (owl:class)
-	        //console.log(prototypeMap)
-			//console.log(Prototype)
+	        console.log(prototypeMap);
+			console.log(Prototype);
 	        if ( Prototype ) {
 	          addAdditionalAttributes(element, Prototype); // TODO might be unnecessary
 	          //console.log(graph)
@@ -13635,7 +13636,7 @@ webvowl =
 	      });
 	    }
 	    //console.log(combinations);
-	    return combinations; //Now includes individual nodes!!!!
+	    return combinations; //Now includes individual nodes
 	  }
 	  
 	  function combineProperties( baseObjects, attributes ){
@@ -25061,6 +25062,8 @@ webvowl =
 	/* WEBPACK VAR INJECTION */(function(d3) {var SetOperatorNode = __webpack_require__(20);
 	var OwlThing = __webpack_require__(31);
 	var OwlNothing = __webpack_require__(30);
+	var OwlNamedIndividual = __webpack_require__(319);
+	var OwlAnonymousIndividual = __webpack_require__(322);
 	var elementTools = __webpack_require__(63)();
 
 	module.exports = function (){
@@ -25133,9 +25136,10 @@ webvowl =
 	    var old = 0, newcc = 0;
 	    classesAndDatatypes.forEach(function ( node ){
 		  //console.log(node);
+		  //if the node is datatype, it is added to datatypeset to be counted in the end
 	      if ( elementTools.isDatatype(node) ) {
 	        datatypeSet.add(node.defaultLabel());
-	      } else if ( !(node instanceof SetOperatorNode) ) {
+	      } else if ( !(node instanceof SetOperatorNode) && !(node instanceof OwlNamedIndividual) && !(node instanceof OwlAnonymousIndividual)) {
 			//console.log(node);
 	        if ( node instanceof OwlThing ) {
 	          hasThing = true;
@@ -25145,7 +25149,7 @@ webvowl =
 	          old = classCount;
 			  //console.log(countElementArray(node.equivalents()));
 			  //console.log(countElementArray(node.individuals()));
-	          var adds = 1 + countElementArray(node.equivalents()) - countElementArray(node.individuals());
+	          var adds = 1 + countElementArray(node.equivalents());
 	          classCount += adds;
 	          newcc = classCount;
 	        }
@@ -25218,6 +25222,33 @@ webvowl =
 	  function storeTotalIndividualCount( nodes ){
 	    var sawIndividuals = {};
 	    var totalCount = 0;
+
+		/* classesAndDatatypes.forEach(function ( node ){
+			//console.log(node);
+			//if the node is datatype, it is added to datatypeset to be counted in the end
+			if ( (node instanceof OwlNamedIndividual) || (node instanceof OwlAnonymousIndividual) ) {
+			  datatypeSet.add(node.defaultLabel());
+			} else if ( (node instanceof OwlNamedIndividual) || (node instanceof OwlAnonymousIndividual)) {
+			  //console.log(node);
+			  if ( node instanceof OwlThing ) {
+				hasThing = true;
+			  } else if ( node instanceof OwlNothing ) {
+				hasNothing = true;
+			  } else {
+				old = classCount;
+				//console.log(countElementArray(node.equivalents()));
+				//console.log(countElementArray(node.individuals()));
+				var adds = 1 + countElementArray(node.equivalents());
+				classCount += adds;
+				newcc = classCount;
+			  }
+			} else if ( node instanceof SetOperatorNode ) {
+			  old = classCount;
+			  classCount += 1;
+			  newcc = classCount;
+			}
+		}), */
+
 	    for ( var i = 0, l = nodes.length; i < l; i++ ) {
 	      var individuals = nodes[i].individuals();
 	      
@@ -25230,6 +25261,7 @@ webvowl =
 	      }
 	      totalCount += tempCount;
 	    }
+
 	    totalIndividualCount = totalCount;
 	    sawIndividuals = {}; // clear the object
 	    
@@ -25490,7 +25522,7 @@ webvowl =
  	  var o = function ( graph ){
  	    OvalNode.apply(this, arguments);
 	    
- 	    this.individuals([]).type("owl:NamedIndividual");
+ 	    this.type("owl:NamedIndividual");
  	  };
  	  o.prototype = Object.create(OvalNode.prototype);
  	  o.prototype.constructor = o;
@@ -25817,7 +25849,7 @@ webvowl =
 	    this.linkType("dotted")
 	      .markerType("white")
 	      .styleClass("subclass")
-	      .type("InstanceOf");
+	      .type("rdf:type");
 	    
 	    that.baseIri("http://www.w3.org/2000/01/rdf-schema#");  //change?
 	    that.iri("http://www.w3.org/2000/01/rdf-schema#subClassOf");  //change?
@@ -25832,23 +25864,23 @@ webvowl =
 
 /***/ }),
 
-// /* 322 */
-//  /***/ (function(module, exports, __webpack_require__) {
+/* 322 */
+ /***/ (function(module, exports, __webpack_require__) {
 
-// 	var OvalNode = __webpack_require__(320);
+	var OvalNode = __webpack_require__(320);
 
-// 	module.exports = (function (){
+	module.exports = (function (){
 	 
-// 	  var o = function ( graph ){
-// 		OvalNode.apply(this, arguments);
+	  var o = function ( graph ){
+		OvalNode.apply(this, arguments);
 	   
-// 		this.individuals([]).type("owl:NamedIndividual");
-// 	  };
-// 	  o.prototype = Object.create(OvalNode.prototype);
-// 	  o.prototype.constructor = o;
+		this.type("owl:AnonymousIndividual");
+	  };
+	  o.prototype = Object.create(OvalNode.prototype);
+	  o.prototype.constructor = o;
 	 
-// 	  return o;
-// 	}());
-// /***/ }),
+	  return o;
+	}());
+/***/ }),
 
 /******/ ]);
