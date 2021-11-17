@@ -1,0 +1,172 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://www.semanticweb.org/filip/ontologies/2021/10/untitled-ontology-22#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "obo" : "http://purl.obolibrary.org/obo/",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "http://www.semanticweb.org/filip/ontologies/2021/10/untitled-ontology-22"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/Treatment",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Treatment",
+      "en" : "Treatment"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/Person",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/Chemotherapy",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chemotherapy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/Disease",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disease",
+      "en" : "Disease"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/Patient",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient",
+      "en" : "Patient"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/Jane_Doe",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "Jane_Doe",
+        "en" : "Jane Doe"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/Abdominal_Pain",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Abdominal_Pain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/has_treatment",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "has_treatment"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external" ],
+    "id" : "2"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_disease",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "has_disease"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external" ],
+    "id" : "10"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  } ]
+}
