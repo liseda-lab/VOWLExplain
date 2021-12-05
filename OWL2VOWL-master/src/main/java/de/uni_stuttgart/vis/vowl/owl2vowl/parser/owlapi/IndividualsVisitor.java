@@ -38,6 +38,7 @@ public class IndividualsVisitor implements OWLIndividualVisitor {
 
 	@Override
 	public void visit(@Nonnull OWLNamedIndividual owlNamedIndividual) {
+//		Change this method?
 		if (vowlData.getClassMap().containsKey(owlNamedIndividual.getIRI())) {
 			vowlData.getClassForIri(baseIRI).addInstance(owlNamedIndividual.getIRI());
 			vowlData.getGenerator().generateTypeOf(baseIRI, owlNamedIndividual.getIRI());

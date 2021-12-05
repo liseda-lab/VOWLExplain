@@ -15,5 +15,6 @@ public class NodeType {
 	public static final String TYPE_COMPLEMENT = "owl:complementOf";
 	public static final String TYPE_DATATYPE = "rdfs:Datatype";
 	public static final String TYPE_LITERAL = "rdfs:Literal";
+	public static final String TYPE_INDIVIDUAL = "owl:NamedIndividual";
 	public static final String KEY_TYPE_DATA_ONE_OF = "DATA_ONE_OF";
 }

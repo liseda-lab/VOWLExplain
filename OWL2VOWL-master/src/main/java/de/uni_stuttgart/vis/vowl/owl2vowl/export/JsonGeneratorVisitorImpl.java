@@ -31,6 +31,9 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 	private List<Object> datatypeAttribute;
 	private List<Object> propertyList;
 	private List<Object> propertyAttributeList;
+	private List<Object> individual;
+	private List<Object> individualAttribute;
+	
 	private Logger logger = LogManager.getLogger(JsonGeneratorVisitorImpl.class);
 
 	public JsonGeneratorVisitorImpl(VowlData vowlData, Map<String, Object> root) {
@@ -49,6 +52,7 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 		return languageToValue;
 	}
 
+	//Add Individual and Individual Property?
 	private void populateJsonRoot() {
 		_class = new ArrayList<>();
 		classAttribute = new ArrayList<>();
@@ -56,12 +60,16 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 		datatypeAttribute = new ArrayList<>();
 		propertyList = new ArrayList<>();
 		propertyAttributeList = new ArrayList<>();
+		individual = new ArrayList<>();
+		individualAttribute = new ArrayList<>();
 		root.put("class", _class);
 		root.put("classAttribute", classAttribute);
 		root.put("datatype", datatype);
 		root.put("datatypeAttribute", datatypeAttribute);
 		root.put("property", propertyList);
 		root.put("propertyAttribute", propertyAttributeList);
+		root.put("individual", individual);
+		root.put("individualAttribute", individualAttribute);
 	}
 
 	private void addCommonFields(AbstractEntity entity, Map<String, Object> object, Map<String, Object> attributes) {
@@ -114,6 +122,7 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 		attributes.put("equivalent", getListWithIds(vowlClass.getSortedEquivalents()));
 		attributes.put("complement", getListWithIds(vowlClass.getComplements()));
 		attributes.put("instances", vowlClass.getInstances().size());
+		//remove this next part because we just want the individuals in their own list!
 		attributes.put("individuals", createIndividualsJson(vowlClass.getIndividuals()));
 		_class.add(object);
 		classAttribute.add(attributes);
@@ -135,7 +144,6 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 
 			individualList.add(fields);
 		}
-
 		return individualList;
 	}
 
@@ -262,8 +270,45 @@ public class JsonGeneratorVisitorImpl implements JsonGeneratorVisitor {
 	}
 
 	@Override
+	
 	public void visit(VowlIndividual vowlIndividual) {
-		// Individuals not needed in json.
+		// Individuals not needed in json. - They are now!
+		Map<String, Object> object = new HashMap<>();
+		Map<String, Object> attributes = new HashMap<>();
+
+		addCommonFields(vowlIndividual, object, attributes); 
+		attributes.put("baseIri", vowlIndividual.getBaseIri().toString());
+		attributes.put("labels", getLabelsFromAnnotations(vowlIndividual.getAnnotations().getLabels()));
+		attributes.put("description", getLabelsFromAnnotations(vowlIndividual.getAnnotations().getDescription()));
+		attributes.put("comment", getLabelsFromAnnotations(vowlIndividual.getAnnotations().getComments()));
+		attributes.put("annotations", vowlIndividual.getAnnotations().getIdentifierToAnnotation());
+
+//		From visit(VowlClass):
+//		attributes.put("instances", vowlClass.getInstances().size());
+//		attributes.put("individuals", createIndividualsJson(vowlClass.getIndividuals()));
+		
+//		From createIndividualsJson
+//		private Object createIndividualsJson(Set<IRI> individuals) {
+//			List<Object> individualList = new ArrayList<>();
+//
+//			for (IRI individualIri : individuals) {
+//				VowlIndividual individual = vowlData.getIndividualMap().get(individualIri);
+//
+//				Map<String, Object> fields = new HashMap<>();
+//				fields.put("iri", individual.getIri().toString());
+//				fields.put("baseIri", individual.getBaseIri().toString());
+//				fields.put("labels", getLabelsFromAnnotations(individual.getAnnotations().getLabels()));
+//				fields.put("description", getLabelsFromAnnotations(individual.getAnnotations().getDescription()));
+//				fields.put("comment", getLabelsFromAnnotations(individual.getAnnotations().getComments()));
+//				fields.put("annotations", individual.getAnnotations().getIdentifierToAnnotation());
+//
+//				individualList.add(fields);
+//			}
+//			return individualList;
+//		}
+		individual.add(object);
+		individualAttribute.add(attributes);
+		System.out.print(individual);
 	}
 
 	@Override
