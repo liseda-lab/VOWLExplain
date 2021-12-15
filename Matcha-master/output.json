@@ -1,0 +1,109 @@
+{
+  "individual" : [ {
+    "id" : "6",
+    "type" : "owl:NamedIndividual"
+  } ],
+  "individualAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/Jane_Doe",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Jane_Doe",
+      "language" : "jane doe"
+    },
+    "id" : 7,
+    "parent-class" : [ "0" ]
+  } ],
+  "classes" : [ {
+    "id" : "0",
+    "type" : "getType"
+  }, {
+    "id" : "1",
+    "type" : "getType"
+  }, {
+    "id" : "2",
+    "type" : "getType"
+  }, {
+    "id" : "3",
+    "type" : "getType"
+  }, {
+    "id" : "4",
+    "type" : "getType"
+  }, {
+    "id" : "5",
+    "type" : "getType"
+  } ],
+  "classAttribute" : [ {
+    "superclasses" : [ "3" ],
+    "iri" : "http://purl.obolibrary.org/obo/Patient",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 1,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Patient",
+      "language" : "patient"
+    },
+    "id" : "0",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "2" ],
+    "iri" : "http://purl.obolibrary.org/obo/Chemotherapy",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 3,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Chemotherapy",
+      "language" : "chemotherapy"
+    },
+    "id" : "1",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/Treatment",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 0,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Treatment",
+      "language" : "treatment"
+    },
+    "id" : "2",
+    "subclasses" : [ "1" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/Person",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 0,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Person",
+      "language" : "person"
+    },
+    "id" : "3",
+    "subclasses" : [ "0" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/Disease",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 0,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Disease",
+      "language" : "disease"
+    },
+    "id" : "4",
+    "subclasses" : [ "5" ]
+  }, {
+    "superclasses" : [ "4" ],
+    "iri" : "http://purl.obolibrary.org/obo/Abdominal_Pain",
+    "baseIri" : "http://purl.obolibrary.org/ob",
+    "instances" : 3,
+    "attributes" : "attributes",
+    "label" : {
+      "IRI-based" : "Abdominal_Pain",
+      "language" : "abdominal pain"
+    },
+    "id" : "5",
+    "subclasses" : [ ]
+  } ]
+}
