@@ -424,6 +424,34 @@ public class Lexicon
 	
 	/**
 	 * @param name: the name to search in the Lexicon
+	 * @param uri: the index of the entity to search in the Lexicon
+	 * @param t: the LexicalType
+	 * @return the list of languages declared for the name,entity pair
+	 */
+	public Set<String> getLanguages(String name, String uri, LexicalType t)
+	{
+		Vector<LexicalMetadata> meta = URINames.get(uri,name);
+		HashSet<String> langs = new HashSet<String>();
+		if(meta == null)
+			return langs;
+		for(LexicalMetadata p : meta)
+			if(p.getType().equals(t))
+				langs.add(p.getLanguage());
+		return langs;
+	}
+	
+	/**
+	 * @param uri: the URI of the entity to search in the Lexicon
+	 * @param name: the name of the entity to search in the Lexicon
+	 * @return the LexicalMetadata values for that URI, name pair
+	 */
+	public Vector<LexicalMetadata> getMetadata(String uri, String name)
+	{
+		return URINames.get(uri,name);
+	}
+	
+	/**
+	 * @param name: the name to search in the Lexicon
 	 * @return the list of languages declared for the name
 	 */
 	public Set<String> getNameLanguages(String name)

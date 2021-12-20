@@ -31,7 +31,7 @@ public class TestApp
 //      String o3 = "D:/data/FMA.owl";
 //    	String a1 = "D:/data/alignment1.owl";
 //    	String a2 = "D:/data/alignment2.owl";
-        String oToJSONpath = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
+        String oToJSONpath = "C:\\Users\\filip\\Downloads\\LargeBio_dataset_oaei\\oaei_FMA_small_overlapping_nci.owl";
     	String ref = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
     	Ontology source = OntologyReader.parseInputOntology(o1);
     	Ontology target = OntologyReader.parseInputOntology(o2);
@@ -44,7 +44,7 @@ public class TestApp
     	StringMatcher sm = new StringMatcher();
     	Alignment a = sm.match(source, target, EntityType.CLASS, 0.6);
     	CreatingJSON test = new CreatingJSON(ontologyToJSON);
-    	// chama o test.justdoit, dont let your dreams be dreams
+    	
     	Alignment r = new Alignment(source,target);
     	AlignmentIORDF.read(r, ref);
     	SimpleEvaluator se = new SimpleEvaluator();
@@ -53,3 +53,9 @@ public class TestApp
     }
 
 }
+
+// Useful paths for testing:
+// "C:\\Users\\filip\\Downloads\\LargeBio_dataset_oaei\\oaei_FMA_small_overlapping_nci.owl"
+// "C:\\Users\\filip\\Downloads\\emapa.owl"
+// "C:\\Users\\filip\\Downloads\\ma.owl"
+// "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
