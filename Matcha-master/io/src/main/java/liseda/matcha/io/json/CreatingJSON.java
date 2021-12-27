@@ -11,14 +11,10 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -31,14 +27,14 @@ import liseda.matcha.util.LocalNamer;
 public class CreatingJSON {
 	
 	FileWriter file = new FileWriter("C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\Matcha-master\\output.json");
-	JSONArray _class = new JSONArray();
-	JSONArray classAttribute = new JSONArray();
-	JSONArray datatype = new JSONArray();
-	JSONArray datatypeAttribute = new JSONArray();
-	JSONArray individual = new JSONArray();
-	JSONArray individualAttribute = new JSONArray();
-	JSONArray property = new JSONArray();
-	JSONArray propertyAttribute = new JSONArray();
+	ArrayList<Object> _class = new ArrayList<Object>();
+	ArrayList<Object> classAttribute = new ArrayList<Object>();
+	ArrayList<Object> datatype = new ArrayList<Object>();
+	ArrayList<Object> datatypeAttribute = new ArrayList<Object>();
+	ArrayList<Object> individual = new ArrayList<Object>();
+	ArrayList<Object> individualAttribute = new ArrayList<Object>();
+	ArrayList<Object> property = new ArrayList<Object>();
+	ArrayList<Object> propertyAttribute = new ArrayList<Object>();
 	SemanticMap sm = SemanticMap.getInstance();
 	Set<String> classIris;
 	Set<String> datatypeIris;
@@ -183,17 +179,17 @@ public class CreatingJSON {
 		classAttributeMap.put("label", classAttributeLabels);
 		
 		Set<String> subclassIRIs = sm.getSubclasses(IRI, false); //returns list of IRIs
-		List subclassIDs = new ArrayList<Integer>();
+		List<Integer> subclassIDs = new ArrayList<Integer>();
 		for (String subclassIRI : subclassIRIs) {
-			subclassIDs.add(IDMap.get(subclassIRI).toString());
+			subclassIDs.add(IDMap.get(subclassIRI));
 		}
-		classAttributeMap.put("subclasses", subclassIDs);
+		classAttributeMap.put("subclasses", subclassIDs.toString());
 		Set<String> superclassIRIs = sm.getSuperclasses(IRI, false); //returns list of IRIs
-		List superclassIDs = new ArrayList<Integer>();
+		List<Integer> superclassIDs = new ArrayList<Integer>();
 		for (String superclassIRI : superclassIRIs) {
-			superclassIDs.add(IDMap.get(superclassIRI).toString());
+			superclassIDs.add(IDMap.get(superclassIRI));
 		}
-		classAttributeMap.put("superclasses", superclassIDs);
+		classAttributeMap.put("superclasses", superclassIDs.toString());
 		classAttributeMap.put("attributes", "attributes");
 		classAttributeMap.put("id", IDMap.get(IRI).toString());
 		JSONObject classAttributeMapJSON = new JSONObject(classAttributeMap);
