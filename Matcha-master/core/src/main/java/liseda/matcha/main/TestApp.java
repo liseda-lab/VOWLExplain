@@ -25,31 +25,26 @@ public class TestApp
     public static void main(String[] args) throws Exception
     {
     	ResourceManager.configLog4J();
-        System.out.println("Starting Matcha");
-        String o1 = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
-        String o2 = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
+//        System.out.println("Starting Matcha");
+//        String o1 = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
+//        String o2 = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
 //      String o3 = "D:/data/FMA.owl";
 //    	String a1 = "D:/data/alignment1.owl";
 //    	String a2 = "D:/data/alignment2.owl";
-        String oToJSONpath = "C:\\Users\\filip\\Downloads\\LargeBio_dataset_oaei\\oaei_FMA_small_overlapping_nci.owl";
-    	String ref = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
-    	Ontology source = OntologyReader.parseInputOntology(o1);
-    	Ontology target = OntologyReader.parseInputOntology(o2);
-    	Ontology ontologyToJSON = OntologyReader.parseInputOntology(oToJSONpath);
+        String oToJSONpath = "C:\\Users\\filip\\Downloads\\ma.owl";
+//    	String ref = "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\WebVOWL_individual\\WebVOWLindividual\\owl_desired_format.owl";
+//    	Ontology source = OntologyReader.parseInputOntology(o1);
+//    	Ontology target = OntologyReader.parseInputOntology(o2);
+    	
     	Settings set = Settings.getInstance();
     	StopList.init(ResourceManager.getStopSet());
-    	set.defaultConfig(source, target);
+//    	set.defaultConfig(source, target);
 //    	AutomaticMatcher am = new AutomaticMatcher();
 //    	Alignment a = am.match(source, target);
-    	StringMatcher sm = new StringMatcher();
-    	Alignment a = sm.match(source, target, EntityType.CLASS, 0.6);
+//    	StringMatcher sm = new StringMatcher();
+//    	Alignment a = sm.match(source, target, EntityType.CLASS, 0.6);
+    	Ontology ontologyToJSON = OntologyReader.parseInputOntology(oToJSONpath);
     	CreatingJSON test = new CreatingJSON(ontologyToJSON);
-    	
-    	Alignment r = new Alignment(source,target);
-    	AlignmentIORDF.read(r, ref);
-    	SimpleEvaluator se = new SimpleEvaluator();
-    	se.evaluate(a,r);
-    	System.out.println(se.toString());
     }
 
 }
