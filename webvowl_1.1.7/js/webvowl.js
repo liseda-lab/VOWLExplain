@@ -401,6 +401,8 @@ webvowl =
 	      that.textBlock(createTextBlock());
 	      
 	      that.addMouseListeners();
+		  that.add
+
 	      if ( that.pinned() ) {
 	        that.drawPin();
 	      }
@@ -411,6 +413,10 @@ webvowl =
 	        that.drawCollapsingButton();
 	      }
 	    };
+
+		// this.addEventListener('dblclick', function () {
+			
+		//   });
 	    
 	    this.redrawLabelText = function (){
 	      that.textBlock().remove();
@@ -1480,6 +1486,7 @@ webvowl =
 	    addCssClasses(circle, cssClasses);
 	    addToolTip(circle, tooltip);
 	    addBackgroundColor(circle, backgroundColor);
+		//circle.addEventListener("dblclick", expandNeighbors);
 	    //console.log(circle);
 	    return circle;
 	  };
@@ -1503,6 +1510,12 @@ webvowl =
 	      element.style("fill", backgroundColor);
 	    }
 	  }
+
+	//   function expandNeighbors(){
+	// 	  document.getElementById("node")
+	//   }
+
+
 	  
 	  /**
 	   * Appends a rectangular class node with the passed attributes.
@@ -1531,7 +1544,7 @@ webvowl =
 	  
 	  /**
 	   * Append an oval node with the passed attributes.
-	   * @param parent the parent element to which the circle will be appended
+	   * @param parent the parent element to which the oval will be appended
 	   * @param radius
 	   * @param [cssClasses] an array of additional css classes
 	   * @param [tooltip]
@@ -1673,6 +1686,7 @@ webvowl =
 	        .attr("animationRunning", false);
 	      haloGroupElement.attr("animationRunning", false);
 	    });
+
 	    
 	    return haloGroupElement;
 	  };
@@ -4557,6 +4571,8 @@ webvowl =
 	// add some maps for nodes and properties -- used for object generation
 	var nodePrototypeMap = __webpack_require__(5)();
 	var propertyPrototypeMap = __webpack_require__(40)();
+	var filter = __webpack_require__(82)();
+
 
 
 	module.exports = function ( graphContainerSelector ){
@@ -4770,6 +4786,22 @@ webvowl =
 	  /** graph / rendering  related functions                      **/
 	  /** --------------------------------------------------------- **/
 	  
+	  //From module 318
+	  function removeUnneededElements( array, removableElements ){
+	    var disjoint = [],
+	      element,
+	      i,
+	      l;
+	    
+	    for ( i = 0, l = array.length; i < l; i++ ) {
+	      element = array[i];
+	      if ( removableElements.indexOf(element) === -1 ) {
+	        disjoint.push(element);
+	      }
+	    }
+	    return disjoint;
+	  }
+
 	  // Initializes the graph.
 	  function initializeGraph(){
 	    
@@ -5269,7 +5301,8 @@ webvowl =
 	    }
 	    
 	    nodeElements.on("click", function ( clickedNode ){
-	      
+			console.log(touchDevice);
+			console.log(doubletap());
 	      // manaual double clicker // helper for iphone 6 etc...
 	      if ( touchDevice === true && doubletap() === true ) {
 	        d3.event.stopPropagation();
@@ -5283,11 +5316,57 @@ webvowl =
 	    });
 	    
 	    nodeElements.on("dblclick", function ( clickedNode ){
-	      
+		//   original code
 	      d3.event.stopPropagation();
 	      if ( editMode === true ) {
 	        clickedNode.raiseDoubleClickEdit(defaultIriValue(clickedNode));
 	      }
+		  else {
+			executeModules(clickedNode);
+		  }
+
+		  //DOUBLE CLICK EXPAND NEIGHBORS FEATURE
+		//   console.log("clickedNode");
+		//   console.log(clickedNode);
+		  
+
+		//   console.log(links);
+		  connectedoutLinks = [];
+		  connectedinLinks = [];
+		  unneededProperties = [];
+	      unneededClasses = [];
+
+	      for ( var j = 0, linksLength = links.length; j < linksLength; j++ ) {
+			console.log("j:", j);
+	        var link = links[j];
+
+	        // look for properties where the clicked node is the domain or range (copied from storeLinksOnNodes())
+			//I might have to separate the link.domain() and link.range, 
+			// because when link.domain() = node, i want to delete link.range() and vice versa
+
+	        if ( link.domain() === clickedNode ) {
+				console.log(link);
+	        	connectedoutLinks.push(link);
+				unneededProperties.push(link.property());
+			  	unneededClasses.push(link.range());
+	        }
+
+			if ( link.range() === clickedNode ) {
+				connectedinLinks.push(link);
+				unneededProperties.push(link.property());
+				unneededClasses.push(link.domain());
+			}
+	       }
+		   	console.log(properties);
+		  	// classNodes = removeUnneededElements(classNodes, unneededClasses);
+			//classNodes = classNodes.filter(isNoFloatingThing); to only remove the ones that are not connected to anything else
+	    	properties = removeUnneededElements(properties, unneededProperties); 
+			classNodes = classNodes.filter(unneededClasses);
+			// nodes = nodes.filter(unneededClasses); "nodes is not defined"
+			console.log(properties);
+			console.log(classNodes);
+			// graph.update(); does not work
+
 	    });
 	    
 	    labelGroupElements.selectAll(".label").on("click", function ( clickedProperty ){
@@ -13570,8 +13649,8 @@ webvowl =
 			//console.log(element.type.toLowerCase());
 	        var Prototype = prototypeMap.get(element.type.toLowerCase()); //aqui escolhe-se a funçao prototype adequada ao tipo
 																		  //do elemento (owl:class)
-	        console.log(prototypeMap);
-			console.log(Prototype);
+	        //console.log(prototypeMap);
+			//console.log(Prototype);
 	        if ( Prototype ) {
 	          addAdditionalAttributes(element, Prototype); // TODO might be unnecessary
 	          //console.log(graph)
@@ -13897,6 +13976,7 @@ webvowl =
 	    });
 	    // Add additional information to the properties
 	    rawProperties.forEach(function ( property ){
+			console.log(property);
 	      // Properties of merged classes should point to/from the visible equivalent class
 	      var propertyWasRerouted = false;
 	      
@@ -13960,6 +14040,8 @@ webvowl =
 	  }
 	  
 	  function wasNodeMerged( node ){
+		console.log("(was node merged) node:")
+		console.log(node)
 	    return !node.visible() && node.equivalentBase();
 	  }
 	  
@@ -14061,8 +14143,8 @@ webvowl =
 	   * @param namespaces an array of namespaces
 	   */
 	  function convertTypesToIris( elements, namespaces ){
-		//console.log(elements);
-		//console.log(namespaces);
+		console.log(elements); //classes and individuals
+		console.log(namespaces);
 	    elements.forEach(function ( element ){
 	      if ( typeof element.iri() === "string" ) {
 	        element.iri(replaceNamespace(element.iri(), namespaces));
@@ -14118,11 +14200,15 @@ webvowl =
 	   */
 	  function replaceNamespace( address, namespaces ){
 	    var separatorIndex = address.indexOf(":");
+		console.log(address);
+		console.log(namespaces);
 	    if ( separatorIndex === -1 ) {
+		  console.log("separator -1");
 	      return address;
 	    }
+		console.log("separator not -1, keeps going");
 	    var namespaceName = address.substring(0, separatorIndex);
-	    
+	    console.log(namespaceName);
 	    for ( var i = 0, length = namespaces.length; i < length; ++i ) {
 	      var namespace = namespaces[i];
 	      if ( namespaceName === namespace.name ) {
@@ -14605,7 +14691,8 @@ webvowl =
 	  
 	  Class_dragger.addMouseEvents = function (){
 	    // console.log("adding mouse events");
-	    Class_dragger.rootNodeLayer.selectAll("*").on("mouseover", Class_dragger.onMouseOver)
+	    Class_dragger.rootNodeLayer.selectAll("*")
+		  .on("mouseover", Class_dragger.onMouseOver)
 	      .on("mouseout", Class_dragger.onMouseOut)
 	      .on("click", function (){
 	      })
@@ -16173,6 +16260,7 @@ webvowl =
 	    focusedElement;
 	  var elementTools = webvowl.util.elementTools();
 	  focuser.handle = function ( selectedElement, forced ){
+		  console.log("Focuser handler function!")
 	    // Don't display details on a drag event, which will be prevented
 	    if ( d3.event && d3.event.defaultPrevented && forced === undefined ) {
 	      return;
@@ -16659,6 +16747,7 @@ webvowl =
 	  };
 	  
 	  pap.handle = function ( selection, forced ){
+		  console.log("Pap handle function!!")
 	    if ( !enabled ) {
 	      return;
 	    }
@@ -24947,6 +25036,7 @@ webvowl =
 	    lastSelectedElement;
 	  
 	  viewer.handle = function ( selectedElement ){
+		  console.log("Viewer handle function!!");
 	    // Don't display details on a drag event, which will be prevented
 	    if ( d3.event.defaultPrevented ) {
 	      return;
@@ -25082,8 +25172,10 @@ webvowl =
 	    filteredNodes,
 	    filteredProperties;
 	  
-	  
+
 	  statistics.filter = function ( classesAndDatatypes, properties ){
+		console.log("Statistics Filter function");
+		console.log(classesAndDatatypes);
 	    resetStoredData();
 	    
 	    storeTotalCounts(classesAndDatatypes, properties);
@@ -25135,12 +25227,14 @@ webvowl =
 	    classCount = 0;
 	    var old = 0, newcc = 0;
 	    classesAndDatatypes.forEach(function ( node ){
-		  //console.log(node);
+		//   console.log(node);
 		  //if the node is datatype, it is added to datatypeset to be counted in the end
 	      if ( elementTools.isDatatype(node) ) {
-	        datatypeSet.add(node.defaultLabel());
+			// console.log("DATATYPE", node.defaultLabel())
+	        // datatypeSet.add(node.defaultLabel());
 	      } else if ( !(node instanceof SetOperatorNode) && !(node instanceof OwlNamedIndividual) && !(node instanceof OwlAnonymousIndividual)) {
-			//console.log(node);
+			// console.log("NEXT IF", node.defaultLabel());
+			// console.log(node instanceof OwlNamedIndividual);
 	        if ( node instanceof OwlThing ) {
 	          hasThing = true;
 	        } else if ( node instanceof OwlNothing ) {
@@ -25163,7 +25257,7 @@ webvowl =
 	    // count things and nothings just a single time
 	    // classCount += hasThing ? 1 : 0;
 	    // classCount += hasNothing ? 1 : 0;
-	    
+	    // console.log(classCount); It's correct, only counts classes
 	    datatypeCount = datatypeSet.size();
 	  }
 	  
@@ -25223,47 +25317,48 @@ webvowl =
 	    var sawIndividuals = {};
 	    var totalCount = 0;
 
-		/* classesAndDatatypes.forEach(function ( node ){
+		nodes.forEach(function ( node ){
 			//console.log(node);
 			//if the node is datatype, it is added to datatypeset to be counted in the end
 			if ( (node instanceof OwlNamedIndividual) || (node instanceof OwlAnonymousIndividual) ) {
-			  datatypeSet.add(node.defaultLabel());
-			} else if ( (node instanceof OwlNamedIndividual) || (node instanceof OwlAnonymousIndividual)) {
-			  //console.log(node);
-			  if ( node instanceof OwlThing ) {
-				hasThing = true;
-			  } else if ( node instanceof OwlNothing ) {
-				hasNothing = true;
-			  } else {
-				old = classCount;
-				//console.log(countElementArray(node.equivalents()));
-				//console.log(countElementArray(node.individuals()));
-				var adds = 1 + countElementArray(node.equivalents());
-				classCount += adds;
-				newcc = classCount;
-			  }
-			} else if ( node instanceof SetOperatorNode ) {
-			  old = classCount;
-			  classCount += 1;
-			  newcc = classCount;
-			}
-		}), */
+			//   datatypeSet.add(node.defaultLabel());
+			// } else if ( (node instanceof OwlNamedIndividual) || (node instanceof OwlAnonymousIndividual)) {
+			//   //console.log(node);
+			//   if ( node instanceof OwlThing ) {
+			// 	hasThing = true;
+			//   } else if ( node instanceof OwlNothing ) {
+			// 	hasNothing = true;
+			//   } else {
+			// 	old = classCount;
+			// 	//console.log(countElementArray(node.equivalents()));
+			// 	//console.log(countElementArray(node.individuals()));
+			// 	var adds = 1 + countElementArray(node.equivalents());
+			// 	classCount += adds;
+			// 	newcc = classCount;
+			//   }
+				totalCount += 1;
+			 } //else if ( node instanceof SetOperatorNode ) {
+			//   old = classCount;
+			//   classCount += 1;
+			//   newcc = classCount;
+			// }
+		})
 
-	    for ( var i = 0, l = nodes.length; i < l; i++ ) {
-	      var individuals = nodes[i].individuals();
-	      
-	      var tempCount = 0;
-	      for ( var iA = 0; iA < individuals.length; iA++ ) {
-	        if ( sawIndividuals[individuals[iA].iri()] === undefined ) {
-	          sawIndividuals[individuals[iA].iri()] = 1; // this iri for that individual is now set to 1 >> seen it
-	          tempCount++;
-	        }
-	      }
-	      totalCount += tempCount;
-	    }
+			// for (var i = 0; i < nodes.length; i++) {
+			// 	var individuals = nodes[i].individuals();
+				
+			// 	var tempCount = 0;
+			// 	for ( var iA = 0; iA < individuals.length; iA++ ) {
+			// 		if ( sawIndividuals[individuals[iA].iri()] === undefined ) {
+			// 		sawIndividuals[individuals[iA].iri()] = 1; // this iri for that individual is now set to 1 >> seen it
+			// 		tempCount++;
+			// 		}
+			// 	}
+			// 	totalCount += tempCount;
+			// }
 
-	    totalIndividualCount = totalCount;
-	    sawIndividuals = {}; // clear the object
+			totalIndividualCount = totalCount;
+			sawIndividuals = {}; // clear the object
 	    
 	  }
 	  
@@ -25285,6 +25380,7 @@ webvowl =
 	  };
 	  
 	  statistics.classCount = function (){
+		console.log("Statistics.classCount", classCount);
 	    return classCount;
 	  };
 	  
@@ -25530,6 +25626,7 @@ webvowl =
  	  return o;
  	}());
 /***/ }),
+
 
 /* 320 */
 /***/ (function(module, exports, __webpack_require__) {
