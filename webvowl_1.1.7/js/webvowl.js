@@ -499,7 +499,7 @@ webvowl =
 	    
 	    this.isPropertyAssignedToThisElement = function ( property ){
 	      // this goes via IRIS
-	      console.log("Element IRI :" + property.iri());
+	    //   console.log("Element IRI :" + property.iri());
 	      if ( property.type() === "rdfs:subClassOf" )
 	        for ( var i = 0; i < assignedProperties.length; i++ ) {
 	          var iriEl = assignedProperties[i].iri();
@@ -548,7 +548,7 @@ webvowl =
 	    };
 	    
 	    this.copyInformation = function ( other ){
-	      console.log(other.labelForCurrentLanguage());
+	    //   console.log(other.labelForCurrentLanguage());
 	      if ( other.type() !== "owl:Thing" )
 	        that.label(other.label());
 	      that.complement(other.complement());
@@ -2344,9 +2344,9 @@ webvowl =
 	        drawTools.appendRectangularClass(renderingElement, 80 - CIRCLE_SIZE_DIFFERENCE, 80 - CIRCLE_SIZE_DIFFERENCE, cssClasses, that.labelForCurrentLanguage(), bgColor);
 	      } else {
 	        drawTools.appendCircularClass(renderingElement, that.actualRadius(), ["white", "embedded"]);
-	        console.log(cssClasses);
-	        console.log(that.attributes());
-	        console.log("what is bgColor" + bgColor);
+	        // console.log(cssClasses);
+	        // console.log(that.attributes());
+	        // console.log("what is bgColor" + bgColor);
 	        drawTools.appendCircularClass(renderingElement, that.actualRadius() - CIRCLE_SIZE_DIFFERENCE, cssClasses, that.labelForCurrentLanguage(), bgColor);
 	        
 	      }
@@ -4611,6 +4611,11 @@ webvowl =
 	    links,
 	    properties,
 	    unfilteredData,
+		connectedoutLinks = [],
+		connectedinLinks = [],
+		unneededProperties = [],
+	    unneededClasses = [],
+		nodesToHide = [],
 	    // Graph behaviour
 	    force,
 	    dragBehaviour,
@@ -4640,6 +4645,7 @@ webvowl =
 	    delayedHider,
 	    nodeFreezer,
 	    hoveredNodeElement = null,
+		lastDbclickedElement,
 	    currentlySelectedNode = null,
 	    hoveredPropertyElement = null,
 	    draggingStarted = false,
@@ -4786,7 +4792,7 @@ webvowl =
 	  /** graph / rendering  related functions                      **/
 	  /** --------------------------------------------------------- **/
 	  
-	  //From module 318
+	  //Copied from module 318
 	  function removeUnneededElements( array, removableElements ){
 	    var disjoint = [],
 	      element,
@@ -5292,17 +5298,18 @@ webvowl =
 	      shadowClone.hideClone(true);
 	    }
 	  };
+
 	  
 	  function addClickEvents(){
 	    function executeModules( selectedElement ){
+			// console.log(options.selectionModules());
 	      options.selectionModules().forEach(function ( module ){
 	        module.handle(selectedElement);
 	      });
 	    }
+
 	    
 	    nodeElements.on("click", function ( clickedNode ){
-			console.log(touchDevice);
-			console.log(doubletap());
 	      // manaual double clicker // helper for iphone 6 etc...
 	      if ( touchDevice === true && doubletap() === true ) {
 	        d3.event.stopPropagation();
@@ -5315,57 +5322,94 @@ webvowl =
 	      }
 	    });
 	    
+		// Onde definir lastSelectedElement para nao perder o valor?
+		// var lastDbclickedElement;
+		// On double click, the first degree neighbors will be collapsed 
+		// On a second double click on the same element, the neighbors appear again 
 	    nodeElements.on("dblclick", function ( clickedNode ){
+			
 		//   original code
 	      d3.event.stopPropagation();
 	      if ( editMode === true ) {
 	        clickedNode.raiseDoubleClickEdit(defaultIriValue(clickedNode));
 	      }
-		  else {
-			executeModules(clickedNode);
+
+		  //DOUBLE CLICK COLLPASE AND EXPAND NEIGHBORS FEATURE
+		  var isSelection = true;
+		  // Deselection of the double clicked element
+		  if ( lastDbclickedElement === clickedNode ) {
+		   isSelection = false;
 		  }
 
-		  //DOUBLE CLICK EXPAND NEIGHBORS FEATURE
-		//   console.log("clickedNode");
-		//   console.log(clickedNode);
-		  
+		  if ( isSelection ) {
+			// If it is a first selection, delete the lists of elements to remove from previous selections 
+			// Otherwise, all selected elements since the beggining will be deleted 
+			connectedoutLinks = [];
+			connectedinLinks = [];
+			unneededProperties = [];
+			unneededClasses = [];
+			nodesToHide = [];
 
-		//   console.log(links);
-		  connectedoutLinks = [];
-		  connectedinLinks = [];
-		  unneededProperties = [];
-	      unneededClasses = [];
+			for ( var j = 0, linksLength = links.length; j < linksLength; j++ ) {
+				var link = links[j];
 
-	      for ( var j = 0, linksLength = links.length; j < linksLength; j++ ) {
-			console.log("j:", j);
-	        var link = links[j];
+				// look for properties where the clicked node is the domain or range (copied from storeLinksOnNodes())
+				//When link.domain() = node, i want to delete link.range() and vice versa
 
-	        // look for properties where the clicked node is the domain or range (copied from storeLinksOnNodes())
-			//I might have to separate the link.domain() and link.range, 
-			// because when link.domain() = node, i want to delete link.range() and vice versa
+				if ( link.domain() === clickedNode ) {
+					connectedoutLinks.push(link);
+					unneededProperties.push(link.property());
+					unneededClasses.push(link.range());
+				}
 
-	        if ( link.domain() === clickedNode ) {
-				console.log(link);
-	        	connectedoutLinks.push(link);
-				unneededProperties.push(link.property());
-			  	unneededClasses.push(link.range());
-	        }
-
-			if ( link.range() === clickedNode ) {
-				connectedinLinks.push(link);
-				unneededProperties.push(link.property());
-				unneededClasses.push(link.domain());
+				if ( link.range() === clickedNode ) {
+					connectedinLinks.push(link);
+					unneededProperties.push(link.property());
+					unneededClasses.push(link.domain());
+				}
 			}
-	       }
-		   	console.log(properties);
-		  	// classNodes = removeUnneededElements(classNodes, unneededClasses);
-			//classNodes = classNodes.filter(isNoFloatingThing); to only remove the ones that are not connected to anything else
-	    	properties = removeUnneededElements(properties, unneededProperties); 
-			classNodes = classNodes.filter(unneededClasses);
-			// nodes = nodes.filter(unneededClasses); "nodes is not defined"
-			console.log(properties);
-			console.log(classNodes);
-			// graph.update(); does not work
+
+				for (node in unneededClasses) {
+					var findProperties = true;
+					while (findProperties === true) {
+						for ( var i = 0; i < properties.length; i++ ) {
+							var property = properties[i];
+							if ( ((property.domain() === unneededClasses[node] || property.range() === unneededClasses[node]) && !unneededProperties.includes(property)) || unneededClasses[node] === clickedNode ) {
+								findProperties = false;
+							} 
+						}
+						if (findProperties === true) {
+							nodesToHide.push(unneededClasses[node]);
+						}
+						findProperties = false;
+					}
+				}
+
+				function removeNodes(value) {
+					return !nodesToHide.includes(value);
+				}
+
+				classNodes = classNodes.filter(removeNodes);
+				properties = removeUnneededElements(properties, unneededProperties);
+		  } 
+		  	// Else it is a second double click, so we want to bring the neighbors back
+		  	else {
+			classNodes = classNodes.concat(unneededClasses);
+			properties = properties.concat(unneededProperties);
+		  }
+
+		  if ( isSelection ) {
+			lastDbclickedElement = clickedNode;
+		  } else {
+			lastDbclickedElement = undefined;
+		  }
+
+			graph.fastUpdate();
+			force.stop();
+		  	// graph.lazyRefresh(); //only removes nodes, not properties
+			// graph.load(); updates whole graph without applying changes
+			// graph.update(); does not do anything
+			//graph.reload();
 
 	    });
 	    
@@ -5870,7 +5914,7 @@ webvowl =
 	    graph.updatePulseIds(nodeArrayForPulse);
 	    refreshGraphStyle();
 	    updateHaloStyles();
-	    
+		recalculatePositions();
 	  };
 	  
 	  graph.getNodeMapForSearch = function (){
@@ -13976,7 +14020,7 @@ webvowl =
 	    });
 	    // Add additional information to the properties
 	    rawProperties.forEach(function ( property ){
-			console.log(property);
+			// console.log(property);
 	      // Properties of merged classes should point to/from the visible equivalent class
 	      var propertyWasRerouted = false;
 	      
@@ -14040,8 +14084,8 @@ webvowl =
 	  }
 	  
 	  function wasNodeMerged( node ){
-		console.log("(was node merged) node:")
-		console.log(node)
+		// console.log("(was node merged) node:")
+		// console.log(node)
 	    return !node.visible() && node.equivalentBase();
 	  }
 	  
@@ -14143,15 +14187,11 @@ webvowl =
 	   * @param namespaces an array of namespaces
 	   */
 	  function convertTypesToIris( elements, namespaces ){
-		console.log(elements); //classes and individuals
-		console.log(namespaces);
 	    elements.forEach(function ( element ){
 	      if ( typeof element.iri() === "string" ) {
 	        element.iri(replaceNamespace(element.iri(), namespaces));
 	      }
 	    });
-		//console.log(elements);
-		//console.log(namespaces);
 
 	  }
 	  
@@ -14200,15 +14240,15 @@ webvowl =
 	   */
 	  function replaceNamespace( address, namespaces ){
 	    var separatorIndex = address.indexOf(":");
-		console.log(address);
-		console.log(namespaces);
+		// console.log(address);
+		// console.log(namespaces);
 	    if ( separatorIndex === -1 ) {
-		  console.log("separator -1");
+		//   console.log("separator -1");
 	      return address;
 	    }
-		console.log("separator not -1, keeps going");
+		// console.log("separator not -1, keeps going");
 	    var namespaceName = address.substring(0, separatorIndex);
-	    console.log(namespaceName);
+	    // console.log(namespaceName);
 	    for ( var i = 0, length = namespaces.length; i < length; ++i ) {
 	      var namespace = namespaces[i];
 	      if ( namespaceName === namespace.name ) {
@@ -14226,11 +14266,15 @@ webvowl =
 	   * @returns {string} the id of the passed object or undefined
 	   */
 	  function findId( object ){
+		//   console.log("findID object:"+object);
+		//   console.log(typeof object);
 	    if ( !object ) {
 	      return undefined;
 	    } else if ( typeof object === "string" ) {
+		
 	      return object;
 	    } else if ( "id" in object ) {
+			// console.log("findID id:"+ object.id());
 	      return object.id();
 	    } else {
 	      console.warn("No Id was found for this object: " + object);
@@ -16260,7 +16304,7 @@ webvowl =
 	    focusedElement;
 	  var elementTools = webvowl.util.elementTools();
 	  focuser.handle = function ( selectedElement, forced ){
-		  console.log("Focuser handler function!")
+		//   console.log("Focuser handler function!");
 	    // Don't display details on a drag event, which will be prevented
 	    if ( d3.event && d3.event.defaultPrevented && forced === undefined ) {
 	      return;
@@ -16299,6 +16343,7 @@ webvowl =
 	   * Removes the focus if an element is focussed.
 	   */
 	  focuser.reset = function (){
+		// console.log("Focuser reset function!");
 	    if ( focusedElement ) {
 	      focusedElement.toggleFocus();
 	      focusedElement = undefined;
@@ -16684,7 +16729,13 @@ webvowl =
 	    return !elementTools.isObjectProperty(property);
 	  }
 	  
-	  function isNoFloatingThing( node ){
+	  filter.isNoFloatingThingGlobal = function ( node ){
+	    var isNoThing = !elementTools.isThing(node);
+	    var hasNonFilteredProperties = hasPropertiesOtherThanObjectProperties(node, properties);
+	    return isNoThing || hasNonFilteredProperties;
+	  }
+
+	  function isNoFloatingThing ( node ){
 	    var isNoThing = !elementTools.isThing(node);
 	    var hasNonFilteredProperties = hasPropertiesOtherThanObjectProperties(node, properties);
 	    return isNoThing || hasNonFilteredProperties;
@@ -16747,7 +16798,7 @@ webvowl =
 	  };
 	  
 	  pap.handle = function ( selection, forced ){
-		  console.log("Pap handle function!!")
+		//   console.log("Pap handle function!!");
 	    if ( !enabled ) {
 	      return;
 	    }
@@ -16786,6 +16837,7 @@ webvowl =
 	  };
 	  
 	  pap.reset = function (){
+		// console.log("Pap reset function!!");
 	    pinnedElements.forEach(function ( element ){
 	      element.removePin();
 	    });
@@ -25036,7 +25088,8 @@ webvowl =
 	    lastSelectedElement;
 	  
 	  viewer.handle = function ( selectedElement ){
-		  console.log("Viewer handle function!!");
+		// console.log("Viewer handle function!!");
+		// console.log("Viewer handle function- lastSelectedElement beggining:"+ lastSelectedElement);
 	    // Don't display details on a drag event, which will be prevented
 	    if ( d3.event.defaultPrevented ) {
 	      return;
@@ -25046,14 +25099,17 @@ webvowl =
 	    
 	    // Deselection of the focused element
 	    if ( lastSelectedElement === selectedElement ) {
-	      isSelection = false;
+	      isSelection = false; 
 	    }
-	    
+	    // console.log("isSelection in viewer handle function:", isSelection);
+		// console.log("handler function:", handlerFunction);
 	    if ( handlerFunction instanceof Function ) {
 	      if ( isSelection ) {
 	        handlerFunction(selectedElement);
+			// console.log("handlerFunction(selectedElement):", handlerFunction(selectedElement));
 	      } else {
 	        handlerFunction(undefined);
+			// console.log("handlerFunction(undefined):", handlerFunction(undefined));
 	      }
 	    }
 	    
@@ -25062,12 +25118,14 @@ webvowl =
 	    } else {
 	      lastSelectedElement = undefined;
 	    }
+		// console.log("Viewer handle function- lastSelectedElement end:"+ lastSelectedElement);
 	  };
 	  
 	  /**
 	   * Resets the displayed information to its default.
 	   */
 	  viewer.reset = function (){
+		// console.log("Viewer reset function!!");
 	    if ( lastSelectedElement ) {
 	      handlerFunction(undefined);
 	      lastSelectedElement = undefined;
@@ -25174,8 +25232,8 @@ webvowl =
 	  
 
 	  statistics.filter = function ( classesAndDatatypes, properties ){
-		console.log("Statistics Filter function");
-		console.log(classesAndDatatypes);
+		// console.log("Statistics Filter function");
+		// console.log(classesAndDatatypes);
 	    resetStoredData();
 	    
 	    storeTotalCounts(classesAndDatatypes, properties);
@@ -25380,7 +25438,6 @@ webvowl =
 	  };
 	  
 	  statistics.classCount = function (){
-		console.log("Statistics.classCount", classCount);
 	    return classCount;
 	  };
 	  
