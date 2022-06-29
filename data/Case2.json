@@ -1,0 +1,1145 @@
+{
+  "individual" : [ {
+    "type" : "owl:NamedIndividual",
+    "id" : "46"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "47"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "50"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "53"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "54"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "56"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "58"
+  } ],
+  "individualAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/NCR1p.R280G",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "ncr1p r280g"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CD2p.S290F",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "CD2p.S290F"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ANKLE2p.L480I",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "ankle2p l480i"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BAP1p.EKYS625fs",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "bap1p ekys625fs"
+    },
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/FAT1p.T3059A",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "fat1p t3059a"
+    },
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/VHLp.VLRSVNS62fs",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "vhlp vlrsvns62fs"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://obolibrary.org/obo/patient2",
+    "attributes" : ["external" ],
+    "baseIri" : "http://obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "patient2",
+      "en" : "patient 2"
+    },
+    "id" : "58"
+  } ],
+  "namespace" : "[ ]",
+  "property" : [ {
+    "type" : "rdfs:SubClassOf",
+    "id" : "32"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "33"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "34"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "35"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "36"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "37"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "38"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "39"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "40"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "41"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "42"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "43"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "44"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "45"
+  }, {
+    "type" : "rdf:type",
+    "id" : "59"
+  }, {
+    "type" : "rdf:type",
+    "id" : "60"
+  }, {
+    "type" : "rdf:type",
+    "id" : "61"
+  }, {
+    "type" : "rdf:type",
+    "id" : "62"
+  }, {
+    "type" : "rdf:type",
+    "id" : "63"
+  }, {
+    "type" : "rdf:type",
+    "id" : "64"
+  }, {
+    "type" : "rdf:type",
+    "id" : "65"
+  }, {
+    "type" : "rdf:type",
+    "id" : "66"
+  }, {
+    "type" : "rdf:type",
+    "id" : "67"
+  }, {
+    "type" : "rdf:type",
+    "id" : "68"
+  }, {
+    "type" : "rdf:type",
+    "id" : "69"
+  }, {
+    "type" : "rdf:type",
+    "id" : "70"
+  }, {
+    "type" : "rdf:type",
+    "id" : "71"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "72"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "73"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "74"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "75"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "76"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "77"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "78"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "79"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "80"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "81"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "82"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "83"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "84"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "85"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "86"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "87"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "88"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "89"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "90"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "91"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "92"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "93"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "94"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "95"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "96"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "97"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32",
+    "domain" : "0"
+  }, {
+    "range" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33",
+    "domain" : "1"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34",
+    "domain" : "3"
+  }, {
+    "range" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35",
+    "domain" : "9"
+  }, {
+    "range" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36",
+    "domain" : "9"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37",
+    "domain" : "11"
+  }, {
+    "range" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38",
+    "domain" : "12"
+  }, {
+    "range" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39",
+    "domain" : "13"
+  }, {
+    "range" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40",
+    "domain" : "18"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41",
+    "domain" : "21"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42",
+    "domain" : "23"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43",
+    "domain" : "27"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44",
+    "domain" : "29"
+  }, {
+    "range" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45",
+    "domain" : "30"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59",
+    "domain" : "46"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60",
+    "domain" : "47"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61",
+    "domain" : "48"
+  }, {
+    "range" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62",
+    "domain" : "49"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63",
+    "domain" : "50"
+  }, {
+    "range" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64",
+    "domain" : "51"
+  }, {
+    "range" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65",
+    "domain" : "52"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66",
+    "domain" : "53"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67",
+    "domain" : "54"
+  }, {
+    "range" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68",
+    "domain" : "55"
+  }, {
+    "range" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69",
+    "domain" : "56"
+  }, {
+    "range" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70",
+    "domain" : "57"
+  }, {
+    "range" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71",
+    "domain" : "58"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "46",
+    "range" : "27",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "72"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "47",
+    "range" : "21",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "73"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "50",
+    "range" : "3",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "53",
+    "range" : "23",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "75"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "54",
+    "range" : "29",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "76"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "56",
+    "range" : "11",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "77"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "46",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "78"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "47",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#present",
+    "baseIri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "domain" : "58",
+    "range" : "22",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "present"
+    },
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#present",
+    "baseIri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "domain" : "58",
+    "range" : "15",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "present"
+    },
+    "id" : "81"
+  }, {
+    "iri" : "http://www.ifomis.org/acgt/1.0#hasGender",
+    "baseIri" : "http://www.ifomis.org/acgt/1.0",
+    "domain" : "58",
+    "range" : "18",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has gender"
+    },
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#present",
+    "baseIri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "domain" : "58",
+    "range" : "19",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "present"
+    },
+    "id" : "83"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "50",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/uberon/refont/has_status",
+    "baseIri" : "http://purl.obolibrary.org/obo/uberon/refont",
+    "domain" : "58",
+    "range" : "30",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has status"
+    },
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#present",
+    "baseIri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "domain" : "58",
+    "range" : "8",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "present"
+    },
+    "id" : "86"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "53",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "87"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "54",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "88"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CLO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "58",
+    "range" : "1",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "CLO_0000167",
+      "en" : "has disease"
+    },
+    "id" : "89"
+  }, {
+    "iri" : "http://www.ifomis.org/acgt/1.0#hasHistory",
+    "baseIri" : "http://www.ifomis.org/acgt/1.0",
+    "domain" : "58",
+    "range" : "31",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has history"
+    },
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CLO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "58",
+    "range" : "12",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "CLO_0000167",
+      "en" : "has disease"
+    },
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "58",
+    "range" : "6",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#present",
+    "baseIri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "domain" : "58",
+    "range" : "13",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "present"
+    },
+    "id" : "93"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "58",
+    "range" : "56",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "94"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/RO_0002599",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "9",
+    "range" : "7",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "RO_0002599",
+      "en" : "capable of inhibiting or preventing pathological process"
+    },
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/RO_0002599",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "9",
+    "range" : "12",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "RO_0002599",
+      "en" : "capable of inhibiting or preventing pathological process"
+    },
+    "id" : "96"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/RO_0002599",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "9",
+    "range" : "10",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "RO_0002599",
+      "en" : "capable of inhibiting or preventing pathological process"
+    },
+    "id" : "97"
+  } ],
+  "header" : {
+    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25",
+    "languages" : [ "en" ],
+    "prefixList" : {
+      "" : "http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-25#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "obo" : "http://purl.obolibrary.org/obo/"
+    }
+  },
+  "comment" : "Created with Matcha",
+  "classAttribute" : [ {
+    "superclasses" : [ "17" ],
+    "iri" : "http://purl.obolibrary.org/obo/DOID_4450",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DOID_4450",
+      "en" : "renal cell carcinoma"
+    },
+    "id" : "1",
+    "subclasses" : [ "12" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129822",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129822",
+      "en" : "antineoplastic antibody"
+    },
+    "id" : "2",
+    "subclasses" : [ "9" ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://identifiers.org/hgnc/29101",
+    "baseIri" : "http://identifiers.org/hgnc",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "29101",
+      "en" : "ankle2 gene"
+    },
+    "id" : "3",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16960",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16960",
+      "en" : "patient"
+    },
+    "id" : "4",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C17357",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C17357",
+      "en" : "gender"
+    },
+    "id" : "5",
+    "subclasses" : [ "18" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C160199",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C160199",
+      "en" : "tumor laterality right"
+    },
+    "id" : "6",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3224",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c3224",
+      "en" : "melanoma"
+    },
+    "id" : "7",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C14864",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C14864",
+      "en" : "asian origin"
+    },
+    "id" : "8",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "20", "2" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C68814",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C68814",
+      "en" : "nivolumab"
+    },
+    "id" : "9",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C153320",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C153320",
+      "en" : "metastatic gastric carcinoma"
+    },
+    "id" : "10",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18261",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C18261",
+      "en" : "vhl gene"
+    },
+    "id" : "11",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "1", "28" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C150595",
+    "equivalent" : [ "28" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C150595",
+      "en" : "metastatic renal cell carcinoma"
+    },
+    "id" : "12",
+    "subclasses" : [ "28" ]
+  }, {
+    "superclasses" : [ "26" ],
+    "iri" : "http://purl.bioontology.org/ontology/OMIM/MTHU010334",
+    "baseIri" : "http://purl.bioontology.org/ontology/OMIM",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "MTHU010334",
+      "en" : "low serum calcium"
+    },
+    "id" : "13",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C96643",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C96643",
+      "en" : "tumor status"
+    },
+    "id" : "14",
+    "subclasses" : [ "30" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.bioontology.org/ontology/OMIM/MTHU010054",
+    "baseIri" : "http://purl.bioontology.org/ontology/OMIM",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "MTHU010054",
+      "en" : "normal leukocyte and platelet counts"
+    },
+    "id" : "15",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://www.phoc.org.cn/pmo/class/PMO_00035855",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "instances" : 6,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "PMO_00035855",
+      "en" : "mutation"
+    },
+    "id" : "16",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.bioontology.org/ontology/LNC/MTHU057039",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "MTHU057039",
+      "en" : "primary diagnosis"
+    },
+    "id" : "17",
+    "subclasses" : [ "1" ]
+  }, {
+    "superclasses" : [ "5" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C20197",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C20197",
+      "en" : "male"
+    },
+    "id" : "18",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.bioontology.org/ontology/LNC/LA26537-3",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "LA26537-3",
+      "en" : "no prior treatment"
+    },
+    "id" : "19",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C124946",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C124946",
+      "en" : "pd1 inhibitor"
+    },
+    "id" : "20",
+    "subclasses" : [ "9" ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C21361",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C21361",
+      "en" : "cd2 gene"
+    },
+    "id" : "21",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C162106",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C162106",
+      "en" : "low hemoglobin level"
+    },
+    "id" : "22",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C20766",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C20766",
+      "en" : "bap1 gene"
+    },
+    "id" : "23",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16612",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16612",
+      "en" : "gene"
+    },
+    "id" : "24",
+    "subclasses" : [ "23", "27", "11", "21", "29", "3" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/CMO_0000503",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "CMO_0000503",
+      "en" : "serum calcium level"
+    },
+    "id" : "26",
+    "subclasses" : [ "13" ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129058",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129058",
+      "en" : "ncr1 gene"
+    },
+    "id" : "27",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/PDQ/CDR0000043693",
+    "baseIri" : "http://purl.bioontology.org/ontology/PDQ",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "CDR0000043693",
+      "en" : "stage iv renal cell cancer"
+    },
+    "id" : "28"
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18397",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C18397",
+      "en" : "fat1 gene"
+    },
+    "id" : "29",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "14" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C156849",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C156849",
+      "en" : "with tumor"
+    },
+    "id" : "30",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C29719",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C29719",
+      "en" : "tobacco smoking history"
+    },
+    "id" : "31",
+    "subclasses" : [ ]
+  } ],
+  "class" : [ {
+    "type" : "owl:Class",
+    "id" : "1"
+  }, {
+    "type" : "owl:Class",
+    "id" : "2"
+  }, {
+    "type" : "owl:Class",
+    "id" : "3"
+  }, {
+    "type" : "owl:Class",
+    "id" : "4"
+  }, {
+    "type" : "owl:Class",
+    "id" : "5"
+  }, {
+    "type" : "owl:Class",
+    "id" : "6"
+  }, {
+    "type" : "owl:Class",
+    "id" : "7"
+  }, {
+    "type" : "owl:Class",
+    "id" : "8"
+  }, {
+    "type" : "owl:Class",
+    "id" : "9"
+  }, {
+    "type" : "owl:Class",
+    "id" : "10"
+  }, {
+    "type" : "owl:Class",
+    "id" : "11"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "12"
+  }, {
+    "type" : "owl:Class",
+    "id" : "13"
+  }, {
+    "type" : "owl:Class",
+    "id" : "14"
+  }, {
+    "type" : "owl:Class",
+    "id" : "15"
+  }, {
+    "type" : "owl:Class",
+    "id" : "16"
+  }, {
+    "type" : "owl:Class",
+    "id" : "17"
+  }, {
+    "type" : "owl:Class",
+    "id" : "18"
+  }, {
+    "type" : "owl:Class",
+    "id" : "19"
+  }, {
+    "type" : "owl:Class",
+    "id" : "20"
+  }, {
+    "type" : "owl:Class",
+    "id" : "21"
+  }, {
+    "type" : "owl:Class",
+    "id" : "22"
+  }, {
+    "type" : "owl:Class",
+    "id" : "23"
+  }, {
+    "type" : "owl:Class",
+    "id" : "24"
+  }, {
+    "type" : "owl:Class",
+    "id" : "26"
+  }, {
+    "type" : "owl:Class",
+    "id" : "27"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "28"
+  }, {
+    "type" : "owl:Class",
+    "id" : "29"
+  }, {
+    "type" : "owl:Class",
+    "id" : "30"
+  }, {
+    "type" : "owl:Class",
+    "id" : "31"
+  } ]
+}

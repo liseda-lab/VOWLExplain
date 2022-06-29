@@ -1,0 +1,2190 @@
+{
+  "individual" : [ {
+    "type" : "owl:NamedIndividual",
+    "id" : "132"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "133"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "134"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "135"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "136"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "137"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "138"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "139"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "140"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "141"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "142"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "143"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "144"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "145"
+  } ],
+  "individualAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/DUSP1p.S152G",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "dusp1p s152g"
+    },
+    "id" : "132"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BAP1p.R207P",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "bap1p r207p"
+    },
+    "id" : "133"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CDC42BPBp.S558Y",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "cdc42bpbp s558y"
+    },
+    "id" : "134"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C274",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "ncit c274",
+      "en" : "antineoplastic agent"
+    },
+    "id" : "135"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/USH2Ap.T3109N",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "ush2ap t3109n"
+    },
+    "id" : "136"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CDKN2Ap.C72*",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "cdkn2ap c72"
+    },
+    "id" : "137"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/FGF14p.G50*",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "fgf14p g50"
+    },
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.obolibrary/obo/patient6",
+    "attributes" : [ "external"],
+    "baseIri" : "http://purl.obolibrary/obo",
+    "label" : {
+      "IRI-based" : "patient6",
+      "en" : "patient 6"
+    },
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/PTPN1p.L195P",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "ptpn1p l195p"
+    },
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BRCA2p.N1730Y",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "brca2p n1730y"
+    },
+    "id" : "141"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C71622",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "NCIT_C71622",
+      "en" : "sunitinib"
+    },
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/DOID_162",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "DOID_162",
+      "en" : "cancer",
+      "zh" : "癌症"
+    },
+    "id" : "143"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CREBBPp.L2074P",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "crebbpp l2074p"
+    },
+    "id" : "144"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/TLK2p.M150R",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "tlk2p m150r"
+    },
+    "id" : "145"
+  } ],
+  "namespace" : "[ ]",
+  "property" : [ {
+    "type" : "rdfs:SubClassOf",
+    "id" : "78"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "79"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "80"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "81"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "82"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "83"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "84"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "85"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "86"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "87"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "88"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "89"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "90"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "91"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "92"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "93"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "94"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "95"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "96"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "97"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "98"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "99"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "100"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "101"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "102"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "103"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "104"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "105"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "106"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "107"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "108"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "109"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "110"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "111"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "112"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "113"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "114"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "115"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "116"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "117"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "118"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "119"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "120"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "121"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "122"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "123"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "124"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "125"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "126"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "127"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "128"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "129"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "130"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "131"
+  }, {
+    "type" : "rdf:type",
+    "id" : "146"
+  }, {
+    "type" : "rdf:type",
+    "id" : "147"
+  }, {
+    "type" : "rdf:type",
+    "id" : "148"
+  }, {
+    "type" : "rdf:type",
+    "id" : "149"
+  }, {
+    "type" : "rdf:type",
+    "id" : "150"
+  }, {
+    "type" : "rdf:type",
+    "id" : "151"
+  }, {
+    "type" : "rdf:type",
+    "id" : "152"
+  }, {
+    "type" : "rdf:type",
+    "id" : "153"
+  }, {
+    "type" : "rdf:type",
+    "id" : "154"
+  }, {
+    "type" : "rdf:type",
+    "id" : "155"
+  }, {
+    "type" : "rdf:type",
+    "id" : "156"
+  }, {
+    "type" : "rdf:type",
+    "id" : "157"
+  }, {
+    "type" : "rdf:type",
+    "id" : "158"
+  }, {
+    "type" : "rdf:type",
+    "id" : "159"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "160"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "161"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "162"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "163"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "164"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "165"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "166"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "167"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "168"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "169"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "170"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "171"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "172"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "173"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "174"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "175"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "176"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78",
+    "domain" : "0"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79",
+    "domain" : "1"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80",
+    "domain" : "2"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81",
+    "domain" : "5"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82",
+    "domain" : "6"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83",
+    "domain" : "7"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84",
+    "domain" : "9"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85",
+    "domain" : "10"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86",
+    "domain" : "11"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87",
+    "domain" : "14"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88",
+    "domain" : "16"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89",
+    "domain" : "17"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90",
+    "domain" : "18"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91",
+    "domain" : "19"
+  }, {
+    "range" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92",
+    "domain" : "21"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93",
+    "domain" : "22"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94",
+    "domain" : "23"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95",
+    "domain" : "24"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96",
+    "domain" : "25"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97",
+    "domain" : "26"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98",
+    "domain" : "27"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99",
+    "domain" : "28"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100",
+    "domain" : "29"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101",
+    "domain" : "30"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102",
+    "domain" : "31"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103",
+    "domain" : "38"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104",
+    "domain" : "39"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105",
+    "domain" : "40"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106",
+    "domain" : "41"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107",
+    "domain" : "42"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108",
+    "domain" : "43"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109",
+    "domain" : "44"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110",
+    "domain" : "46"
+  }, {
+    "range" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111",
+    "domain" : "49"
+  }, {
+    "range" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112",
+    "domain" : "49"
+  }, {
+    "range" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113",
+    "domain" : "49"
+  }, {
+    "range" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114",
+    "domain" : "52"
+  }, {
+    "range" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115",
+    "domain" : "53"
+  }, {
+    "range" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116",
+    "domain" : "53"
+  }, {
+    "range" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117",
+    "domain" : "53"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118",
+    "domain" : "55"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119",
+    "domain" : "57"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120",
+    "domain" : "59"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121",
+    "domain" : "60"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122",
+    "domain" : "62"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123",
+    "domain" : "65"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124",
+    "domain" : "66"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125",
+    "domain" : "68"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126",
+    "domain" : "70"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127",
+    "domain" : "71"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128",
+    "domain" : "73"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129",
+    "domain" : "74"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130",
+    "domain" : "75"
+  }, {
+    "range" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131",
+    "domain" : "76"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146",
+    "domain" : "132"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147",
+    "domain" : "133"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148",
+    "domain" : "134"
+  }, {
+    "range" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149",
+    "domain" : "135"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150",
+    "domain" : "136"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151",
+    "domain" : "137"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152",
+    "domain" : "138"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153",
+    "domain" : "139"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154",
+    "domain" : "140"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155",
+    "domain" : "141"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156",
+    "domain" : "142"
+  }, {
+    "range" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157",
+    "domain" : "143"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158",
+    "domain" : "144"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159",
+    "domain" : "145"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "132",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "160"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "133",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "161"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "134",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "162"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "136",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "163"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "137",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "164"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "138",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "165"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "140",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "166"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "141",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "167"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "144",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "168"
+  }, {
+    "iri" : "http://www.ifomis.org/acgt/1.0#hasGender",
+    "baseIri" : "http://www.ifomis.org/acgt/1.0",
+    "domain" : "139",
+    "range" : "33",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has gender"
+    },
+    "id" : "169"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/uberon/refont/has_status",
+    "baseIri" : "http://purl.obolibrary.org/obo/uberon/refont",
+    "domain" : "139",
+    "range" : "63",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has status"
+    },
+    "id" : "170"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CLO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "139",
+    "range" : "49",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "CLO_0000167",
+      "en" : "has disease"
+    },
+    "id" : "171"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "139",
+    "range" : "45",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "172"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "139",
+    "range" : "35",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "173"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "139",
+    "range" : "145",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "174"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/RO#_is_a",
+    "baseIri" : "http://purl.obolibrary.org/obo/RO",
+    "domain" : "53",
+    "range" : "21",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "_is_a"
+    },
+    "id" : "175"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000090",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "52",
+    "range" : "21",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000090",
+      "en" : "target of"
+    },
+    "id" : "176"
+  } ],
+  "header" : {
+    "iri" : "http://www.semanticweb.org/filip/ontologies/2022/5/untitled-ontology-63",
+    "languages" : [ "en", "zh" ],
+    "prefixList" : {
+      "" : "http://www.semanticweb.org/filip/ontologies/2022/5/untitled-ontology-63#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "obo" : "http://purl.obolibrary.org/obo/"
+    }
+  },
+  "comment" : "Created with Matcha",
+  "classAttribute" : [ {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1931",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1931",
+      "en" : "antineoplastic plant product"
+    },
+    "id" : "0",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://www.drugtargetontology.org/dto/DTO_03200529",
+    "baseIri" : "http://www.drugtargetontology.org/dto",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DTO_03200529",
+      "en" : "tlk2 gene"
+    },
+    "id" : "1",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C26568",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C26568",
+      "en" : "crebbp gene"
+    },
+    "id" : "2",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "49", "52", "15", "4" ],
+    "iri" : "http://purl.bioontology.org/ontology/PDQ/CDR0000039997",
+    "equivalent" : [ "49" ],
+    "baseIri" : "http://purl.bioontology.org/ontology/PDQ",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ "equivalent" , "external"],
+    "label" : {
+      "IRI-based" : "CDR0000039997",
+      "en" : "clear cell renal cell carcinoma"
+    },
+    "id" : "3",
+    "subclasses" : [ "40", "42", "9", "11", "49", "31", "68", "71", "14", "74", "75", "76" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C9385",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c9385",
+      "en" : "renal cell carcinoma"
+    },
+    "id" : "4",
+    "subclasses" : [ "49" ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129821",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129821",
+      "en" : "antineoplastic biological agent"
+    },
+    "id" : "5",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129820",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129820",
+      "en" : "antineoplastic immunomodulating agent"
+    },
+    "id" : "6",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2189",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2189",
+      "en" : "signal transduction inhibitor"
+    },
+    "id" : "7",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "32", "69", "20", "52", "37", "77", "56" ],
+    "iri" : "http://purl.obolibrary.org/obo/MONDO_0004992",
+    "equivalent" : [ "32", "69", "20", "52", "37", "77" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "MONDO_0004992",
+      "en" : "cancer"
+    },
+    "id" : "8",
+    "subclasses" : [ "49", "32", "69", "20", "52", "37", "77" ]
+  }, {
+    "superclasses" : [ "49" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C165449",
+    "equivalent" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "NCIT_C165449",
+      "en" : "unresectable clear cell renal cell carcinoma"
+    },
+    "id" : "9",
+    "subclasses" : [ "31", "68", "71", "14", "40", "42", "74", "75", "76", "11" ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2186",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2186",
+      "en" : "diarylsulfonylurea compound"
+    },
+    "id" : "10",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "49", "31", "14", "40", "42", "75", "76", "9" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C162768",
+    "equivalent" : [ "31", "14", "40", "42", "75", "76", "9" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "NCIT_C162768",
+      "en" : "metastatic clear cell renal cell carcinoma"
+    },
+    "id" : "11",
+    "subclasses" : [ "68", "31", "71", "14", "40", "42", "74", "76", "75", "9" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16960",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16960",
+      "en" : "patient"
+    },
+    "id" : "12",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21", "54" ],
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_35610",
+    "equivalent" : [ "21" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" , "external"],
+    "label" : {
+      "IRI-based" : "CHEBI_35610",
+      "en" : "antineoplastic agent"
+    },
+    "id" : "13",
+    "subclasses" : [ "0", "41", "5", "6", "7", "44", "10", "46", "16", "55", "17", "59", "60", "19", "21", "22", "62", "24", "25", "26", "27", "28", "29", "65", "66", "30" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C164236",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C164236",
+      "en" : "refractory clear cell renal cell carcinoma"
+    },
+    "id" : "14"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3766",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c3766",
+      "en" : "clear cell adenocarcinoma"
+    },
+    "id" : "15",
+    "subclasses" : [ "49" ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C132686",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C132686",
+      "en" : "demethylating agent"
+    },
+    "id" : "16",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C259",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c259",
+      "en" : "antineoplastic antibiotic"
+    },
+    "id" : "17",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18022",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C18022",
+      "en" : "cdkn2a gene"
+    },
+    "id" : "18",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129839",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129839",
+      "en" : "apoptotic pathway targeting antineoplastic agent"
+    },
+    "id" : "19",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://www.ebi.ac.uk/efo/EFO_0000311",
+    "baseIri" : "http://www.ebi.ac.uk/efo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "EFO_0000311",
+      "en" : "cancer"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C274",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "en" : "antineoplastic"
+    },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c274",
+      "en" : "antineoplastic agent"
+    },
+    "id" : "21"
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C273",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c273",
+      "en" : "antimitotic agent"
+    },
+    "id" : "22",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C24355",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C24355",
+      "en" : "dusp1 gene"
+    },
+    "id" : "23",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C272",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c272",
+      "en" : "antimetabolite"
+    },
+    "id" : "24",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1742",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1742",
+      "en" : "angiogenesis inhibitor"
+    },
+    "id" : "25",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1663",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1663",
+      "en" : "antineoplastic vaccine"
+    },
+    "id" : "26",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1463",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1463",
+      "en" : "dihydrolenperone"
+    },
+    "id" : "27",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C177430",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C177430",
+      "en" : "agent targeting cancer metabolism"
+    },
+    "id" : "28",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C83820",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C83820",
+      "en" : "intiquinatine"
+    },
+    "id" : "29",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2196",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2196",
+      "en" : "antimetastatic agent"
+    },
+    "id" : "30",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C153590",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C153590",
+      "en" : "recurrent clear cell renal cell carcinoma"
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/HP_0002664",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "HP_0002664",
+      "en" : "neoplasm"
+    },
+    "id" : "32"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16576",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16576",
+      "en" : "female"
+    },
+    "id" : "33",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3672",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c3672",
+      "en" : "calcification"
+    },
+    "id" : "34",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C41222",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C41222",
+      "en" : "not hispanic or latino"
+    },
+    "id" : "35",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16612",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16612",
+      "en" : "gene"
+    },
+    "id" : "36",
+    "subclasses" : [ "70", "23", "39", "1", "73", "2", "43", "18", "38", "57" ]
+  }, {
+    "iri" : "http://www.ifomis.org/acgt/1.0#MalignNeoplasm",
+    "baseIri" : "http://www.ifomis.org/acgt/1.0",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "malign neoplasm"
+    },
+    "id" : "37"
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C24705",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C24705",
+      "en" : "ptpn1 gene"
+    },
+    "id" : "38",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C147990",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C147990",
+      "en" : "fgf14 gene"
+    },
+    "id" : "39",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C35853",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C35853",
+      "en" : "grade 3 clear cell renal cell carcinoma"
+    },
+    "id" : "40"
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2842",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2842",
+      "en" : "dna binding agent"
+    },
+    "id" : "41",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C35854",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C35854",
+      "en" : "grade 4 clear cell renal cell carcinoma"
+    },
+    "id" : "42"
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://www.drugtargetontology.org/dto/DTO_03200342",
+    "baseIri" : "http://www.drugtargetontology.org/dto",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DTO_03200342",
+      "en" : "cdc42bpb gene"
+    },
+    "id" : "43",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2122",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2122",
+      "en" : "cell differentiating agent"
+    },
+    "id" : "44",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C41261",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C41261",
+      "en" : "white"
+    },
+    "id" : "45",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C163758",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C163758",
+      "en" : "targeted therapy agent"
+    },
+    "id" : "46",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C61143",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C61143",
+      "en" : "delicate vascular network formation"
+    },
+    "id" : "47",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C41454",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C41454",
+      "en" : "cystic change"
+    },
+    "id" : "48",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C4033",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : {
+      "en" : "hypernephroid tumor"
+    },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c4033",
+      "en" : "clear cell renal cell carcinoma"
+    },
+    "id" : "49"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C93259",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C93259",
+      "en" : "vegfr tyrosine kinase inhibitor"
+    },
+    "id" : "50",
+    "subclasses" : [ "53" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C39786",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C39786",
+      "en" : "bilateral disease"
+    },
+    "id" : "51",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/DOID_162",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "en" : "malignant tumor",
+      "zh" : "恶性肿瘤(malignant neoplasm)"
+    },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DOID_162",
+      "en" : "cancer",
+      "zh" : "癌症"
+    },
+    "id" : "52"
+  }, {
+    "superclasses" : [ "58", "50", "72", "64" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C71622",
+    "equivalent" : [ "58" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C71622",
+      "en" : "sunitinib"
+    },
+    "id" : "53",
+    "subclasses" : [ "58" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1909",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1909",
+      "en" : "pharmacologic substance"
+    },
+    "id" : "54",
+    "subclasses" : [ "21" ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C73242",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C73242",
+      "en" : "simtrazene"
+    },
+    "id" : "55",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/DOID_14566",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DOID_14566",
+      "en" : "disease of cellular proliferation",
+      "zh" : "细胞增殖疾病"
+    },
+    "id" : "56",
+    "subclasses" : [ "52" ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18120",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C18120",
+      "en" : "brca2 gene"
+    },
+    "id" : "57",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/PDQ/CDR0000299061",
+    "baseIri" : "http://purl.bioontology.org/ontology/PDQ",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "CDR0000299061",
+      "en" : "sunitinib malate"
+    },
+    "id" : "58"
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C798",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c798",
+      "en" : "radiosensitizing agent"
+    },
+    "id" : "59",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129818",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129818",
+      "en" : "antineoplastic hormonal endocrine agent"
+    },
+    "id" : "60",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://www.phoc.org.cn/pmo/class/PMO_00035855",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "instances" : 10,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "PMO_00035855",
+      "en" : "mutation"
+    },
+    "id" : "61",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C129819",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C129819",
+      "en" : "antineoplastic radiopharmaceutical agent"
+    },
+    "id" : "62",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C37987",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C37987",
+      "en" : "alive"
+    },
+    "id" : "63",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C159198",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C159198",
+      "en" : "c kit inhibitor"
+    },
+    "id" : "64",
+    "subclasses" : [ "53" ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C177298",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C177298",
+      "en" : "mitochondrial targeting antineoplastic agent"
+    },
+    "id" : "65",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "21" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2252",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2252",
+      "en" : "chemotherapeutic topical agent"
+    },
+    "id" : "66",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C36184",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C36184",
+      "en" : "necrotic change"
+    },
+    "id" : "67",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "49", "31", "14", "40", "42", "74", "75", "76", "9", "11" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C36261",
+    "equivalent" : [ "31", "14", "40", "42", "74", "75", "76", "9", "11" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "NCIT_C36261",
+      "en" : "non hereditary clear cell renal cell carcinoma"
+    },
+    "id" : "68",
+    "subclasses" : [ "31", "71", "14", "40", "42", "74", "76", "75", "9", "11" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MONDO_0005070",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "MONDO_0005070",
+      "en" : "neoplasm"
+    },
+    "id" : "69"
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C20766",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C20766",
+      "en" : "bap1 gene"
+    },
+    "id" : "70",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "49", "31", "68", "14", "40", "42", "74", "75", "76", "9", "11" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C36260",
+    "equivalent" : [ "31", "68", "14", "40", "42", "74", "75", "76", "9", "11" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "NCIT_C36260",
+      "en" : "hereditary clear cell renal cell carcinoma"
+    },
+    "id" : "71",
+    "subclasses" : [ "31", "68", "14", "40", "42", "74", "76", "75", "9", "11" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C159199",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C159199",
+      "en" : "pdgfr inhibitor"
+    },
+    "id" : "72",
+    "subclasses" : [ "53" ]
+  }, {
+    "superclasses" : [ "36" ],
+    "iri" : "http://identifiers.org/hgnc/12601",
+    "baseIri" : "http://identifiers.org/hgnc",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "12601"
+    },
+    "id" : "73",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C35851",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C35851",
+      "en" : "grade 1 clear cell renal cell carcinoma"
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C157614",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C157614",
+      "en" : "bap1 mutant clear cell renal cell carcinoma"
+    },
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C35852",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C35852",
+      "en" : "grade 2 clear cell renal cell carcinoma"
+    },
+    "id" : "76"
+  }, {
+    "iri" : "http://www.ebi.ac.uk/efo/EFO_0000616",
+    "baseIri" : "http://www.ebi.ac.uk/efo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "EFO_0000616",
+      "en" : "neoplasm"
+    },
+    "id" : "77"
+  } ],
+  "class" : [ {
+    "type" : "owl:Class",
+    "id" : "0"
+  }, {
+    "type" : "owl:Class",
+    "id" : "1"
+  }, {
+    "type" : "owl:Class",
+    "id" : "2"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "3"
+  }, {
+    "type" : "owl:Class",
+    "id" : "4"
+  }, {
+    "type" : "owl:Class",
+    "id" : "5"
+  }, {
+    "type" : "owl:Class",
+    "id" : "6"
+  }, {
+    "type" : "owl:Class",
+    "id" : "7"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "8"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "9"
+  }, {
+    "type" : "owl:Class",
+    "id" : "10"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "11"
+  }, {
+    "type" : "owl:Class",
+    "id" : "12"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "13"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "14"
+  }, {
+    "type" : "owl:Class",
+    "id" : "15"
+  }, {
+    "type" : "owl:Class",
+    "id" : "16"
+  }, {
+    "type" : "owl:Class",
+    "id" : "17"
+  }, {
+    "type" : "owl:Class",
+    "id" : "18"
+  }, {
+    "type" : "owl:Class",
+    "id" : "19"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "20"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "21"
+  }, {
+    "type" : "owl:Class",
+    "id" : "22"
+  }, {
+    "type" : "owl:Class",
+    "id" : "23"
+  }, {
+    "type" : "owl:Class",
+    "id" : "24"
+  }, {
+    "type" : "owl:Class",
+    "id" : "25"
+  }, {
+    "type" : "owl:Class",
+    "id" : "26"
+  }, {
+    "type" : "owl:Class",
+    "id" : "27"
+  }, {
+    "type" : "owl:Class",
+    "id" : "28"
+  }, {
+    "type" : "owl:Class",
+    "id" : "29"
+  }, {
+    "type" : "owl:Class",
+    "id" : "30"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "31"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "32"
+  }, {
+    "type" : "owl:Class",
+    "id" : "33"
+  }, {
+    "type" : "owl:Class",
+    "id" : "34"
+  }, {
+    "type" : "owl:Class",
+    "id" : "35"
+  }, {
+    "type" : "owl:Class",
+    "id" : "36"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "37"
+  }, {
+    "type" : "owl:Class",
+    "id" : "38"
+  }, {
+    "type" : "owl:Class",
+    "id" : "39"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "40"
+  }, {
+    "type" : "owl:Class",
+    "id" : "41"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "42"
+  }, {
+    "type" : "owl:Class",
+    "id" : "43"
+  }, {
+    "type" : "owl:Class",
+    "id" : "44"
+  }, {
+    "type" : "owl:Class",
+    "id" : "45"
+  }, {
+    "type" : "owl:Class",
+    "id" : "46"
+  }, {
+    "type" : "owl:Class",
+    "id" : "47"
+  }, {
+    "type" : "owl:Class",
+    "id" : "48"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "49"
+  }, {
+    "type" : "owl:Class",
+    "id" : "50"
+  }, {
+    "type" : "owl:Class",
+    "id" : "51"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "52"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "53"
+  }, {
+    "type" : "owl:Class",
+    "id" : "54"
+  }, {
+    "type" : "owl:Class",
+    "id" : "55"
+  }, {
+    "type" : "owl:Class",
+    "id" : "56"
+  }, {
+    "type" : "owl:Class",
+    "id" : "57"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "58"
+  }, {
+    "type" : "owl:Class",
+    "id" : "59"
+  }, {
+    "type" : "owl:Class",
+    "id" : "60"
+  }, {
+    "type" : "owl:Class",
+    "id" : "61"
+  }, {
+    "type" : "owl:Class",
+    "id" : "62"
+  }, {
+    "type" : "owl:Class",
+    "id" : "63"
+  }, {
+    "type" : "owl:Class",
+    "id" : "64"
+  }, {
+    "type" : "owl:Class",
+    "id" : "65"
+  }, {
+    "type" : "owl:Class",
+    "id" : "66"
+  }, {
+    "type" : "owl:Class",
+    "id" : "67"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "68"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "69"
+  }, {
+    "type" : "owl:Class",
+    "id" : "70"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "71"
+  }, {
+    "type" : "owl:Class",
+    "id" : "72"
+  }, {
+    "type" : "owl:Class",
+    "id" : "73"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "74"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "75"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "76"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "77"
+  } ]
+}

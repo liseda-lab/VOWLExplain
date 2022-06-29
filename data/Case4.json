@@ -1,0 +1,1921 @@
+{
+  "individual" : [ {
+    "type" : "owl:NamedIndividual",
+    "id" : "105"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "106"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "107"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "108"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "110"
+  }, {
+    "type" : "owl:NamedIndividual",
+    "id" : "112"
+  }],
+  "individualAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/SELPp.PLGSSSY526fs",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "selpp plgsssy526fs"
+    },
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CYP11B2p.S388*",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "cyp11b2p s388"
+    },
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/HK3p.A646V",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "HK3p.A646V"
+    },
+    "id" : "107"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/TSC1p.Q435*",
+    "attributes" : [ "external"],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "tsc1p q435"
+    },
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.obolibrary/obo/patient4",
+    "attributes" : ["external" ],
+    "baseIri" : "http://purl.obolibrary/obo",
+    "label" : {
+      "IRI-based" : "patient4"
+    },
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/DCHS2p.E104K",
+    "attributes" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "label" : {
+      "IRI-based" : "dchs2p e104k"
+    },
+    "id" : "112"
+  } ],
+  "namespace" : "[ ]",
+  "property" : [ {
+    "type" : "rdfs:SubClassOf",
+    "id" : "64"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "65"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "66"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "67"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "68"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "69"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "70"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "71"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "72"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "73"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "74"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "75"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "76"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "77"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "78"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "79"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "80"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "81"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "82"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "83"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "84"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "85"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "86"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "87"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "88"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "89"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "90"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "91"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "92"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "93"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "94"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "95"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "96"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "97"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "98"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "99"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "100"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "101"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "102"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "103"
+  }, {
+    "type" : "rdf:type",
+    "id" : "115"
+  }, {
+    "type" : "rdf:type",
+    "id" : "116"
+  }, {
+    "type" : "rdf:type",
+    "id" : "117"
+  }, {
+    "type" : "rdf:type",
+    "id" : "118"
+  }, {
+    "type" : "rdf:type",
+    "id" : "119"
+  }, {
+    "type" : "rdf:type",
+    "id" : "120"
+  }, {
+    "type" : "rdf:type",
+    "id" : "121"
+  }, {
+    "type" : "rdf:type",
+    "id" : "122"
+  }, {
+    "type" : "rdf:type",
+    "id" : "123"
+  }, {
+    "type" : "rdf:type",
+    "id" : "124"
+  }, {
+    "type" : "rdf:type",
+    "id" : "125"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "126"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "127"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "128"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "129"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "130"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "131"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "132"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "133"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "134"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "135"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "136"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "137"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "138"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "139"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "140"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "141"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "143"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "144"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "145"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "146"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "148"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "149"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "150"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "151"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "152"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "153"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "154"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "155"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "156"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64",
+    "domain" : "0"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65",
+    "domain" : "1"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66",
+    "domain" : "2"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67",
+    "domain" : "3"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68",
+    "domain" : "4"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69",
+    "domain" : "11"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70",
+    "domain" : "15"
+  }, {
+    "range" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71",
+    "domain" : "18"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72",
+    "domain" : "18"
+  }, {
+    "range" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73",
+    "domain" : "18"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74",
+    "domain" : "19"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75",
+    "domain" : "20"
+  }, {
+    "range" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76",
+    "domain" : "23"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77",
+    "domain" : "27"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78",
+    "domain" : "28"
+  }, {
+    "range" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79",
+    "domain" : "29"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80",
+    "domain" : "30"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81",
+    "domain" : "31"
+  }, {
+    "range" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82",
+    "domain" : "33"
+  }, {
+    "range" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83",
+    "domain" : "33"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84",
+    "domain" : "34"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85",
+    "domain" : "35"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86",
+    "domain" : "38"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87",
+    "domain" : "40"
+  }, {
+    "range" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88",
+    "domain" : "41"
+  }, {
+    "range" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89",
+    "domain" : "43"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90",
+    "domain" : "44"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91",
+    "domain" : "46"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92",
+    "domain" : "47"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93",
+    "domain" : "48"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94",
+    "domain" : "49"
+  }, {
+    "range" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95",
+    "domain" : "51"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96",
+    "domain" : "54"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97",
+    "domain" : "55"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98",
+    "domain" : "56"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99",
+    "domain" : "57"
+  }, {
+    "range" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100",
+    "domain" : "57"
+  }, {
+    "range" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101",
+    "domain" : "61"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102",
+    "domain" : "62"
+  }, {
+    "range" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103",
+    "domain" : "63"
+  }, {
+    "range" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115",
+    "domain" : "104"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116",
+    "domain" : "105"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117",
+    "domain" : "106"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118",
+    "domain" : "107"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119",
+    "domain" : "108"
+  }, {
+    "range" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120",
+    "domain" : "109"
+  }, {
+    "range" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121",
+    "domain" : "110"
+  }, {
+    "range" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122",
+    "domain" : "111"
+  }, {
+    "range" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123",
+    "domain" : "112"
+  }, {
+    "range" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124",
+    "domain" : "113"
+  }, {
+    "range" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125",
+    "domain" : "114"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "105",
+    "range" : "19",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "126"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "106",
+    "range" : "20",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "127"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "107",
+    "range" : "38",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "128"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "108",
+    "range" : "57",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "129"
+  }, {
+    "iri" : "http://www.ifomis.org/acgt/1.0#hasGender",
+    "baseIri" : "http://www.ifomis.org/acgt/1.0",
+    "domain" : "110",
+    "range" : "22",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has gender"
+    },
+    "id" : "130"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CLO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "110",
+    "range" : "26",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "CLO_0000167",
+      "en" : "has disease"
+    },
+    "id" : "131"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "110",
+    "range" : "105",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "132"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "110",
+    "range" : "106",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "133"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "110",
+    "range" : "14",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "134"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "110",
+    "range" : "107",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "135"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "110",
+    "range" : "10",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "136"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "110",
+    "range" : "108",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "137"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CLO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "110",
+    "range" : "12",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "CLO_0000167",
+      "en" : "has disease"
+    },
+    "id" : "138"
+  }, {
+    "iri" : "http://www.phoc.org.cn/pmo/class/R00000038",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "domain" : "110",
+    "range" : "112",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "R00000038",
+      "en" : "has mutation"
+    },
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/has_property",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "domain" : "110",
+    "range" : "37",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has property"
+    },
+    "id" : "140"
+  }, {
+    "iri" : "http://www.ifomis.org/obo/ro/1.0#partOf",
+    "baseIri" : "http://www.ifomis.org/obo/ro/1.0",
+    "domain" : "112",
+    "range" : "61",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "part of"
+    },
+    "id" : "141"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/RO_0002212",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "33",
+    "range" : "41",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "RO_0002212",
+      "en" : "negatively regulates"
+    },
+    "id" : "143"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "41",
+    "range" : "51",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
+    },
+    "id" : "144"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "41",
+    "range" : "43",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
+    },
+    "id" : "145"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "41",
+    "range" : "23",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
+    },
+    "id" : "146"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R37",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "9",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r37",
+      "en" : "gene plays role in process"
+    },
+    "id" : "148"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R175",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "52",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r175",
+      "en" : "gene involved in pathogenesis of disease"
+    },
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R37",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "5",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r37",
+      "en" : "gene plays role in process"
+    },
+    "id" : "150"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R37",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "13",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r37",
+      "en" : "gene plays role in process"
+    },
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R37",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "8",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r37",
+      "en" : "gene plays role in process"
+    },
+    "id" : "152"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R132",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "57",
+    "range" : "7",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r132",
+      "en" : "gene has abnormality"
+    },
+    "id" : "153"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "59",
+    "range" : "51",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r130",
+      "en" : "gene is element in pathway"
+    },
+    "id" : "154"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "59",
+    "range" : "43",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r130",
+      "en" : "gene is element in pathway"
+    },
+    "id" : "155"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "59",
+    "range" : "23",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "ncit r130",
+      "en" : "gene is element in pathway"
+    },
+    "id" : "156"
+  } ],
+  "header" : {
+    "iri" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Finais OWL\\Patient4.rdf",
+    "languages" : [ "en" ],
+    "prefixList" : {
+      "" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Finais OWL\\Patient4.rdf#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "obo" : "http://purl.obolibrary.org/obo/"
+    }
+  },
+  "comment" : "Created with Matcha",
+  "classAttribute" : [ {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C173426",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C173426",
+      "en" : "wee1 kinase inhibitor debio 0123"
+    },
+    "id" : "0",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C88329",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C88329",
+      "en" : "vistusertib"
+    },
+    "id" : "1",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1212",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1212",
+      "en" : "sirolimus"
+    },
+    "id" : "2",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C101132",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C101132",
+      "en" : "mtor1 2 kinase inhibitor me 344"
+    },
+    "id" : "3",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C179171",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C179171",
+      "en" : "mtorc1 kinase inhibitor rmc 5552"
+    },
+    "id" : "4",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C26040",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C26040",
+      "en" : "tumor suppression"
+    },
+    "id" : "5",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16960",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16960",
+      "en" : "patient"
+    },
+    "id" : "6",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C40462",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C40462",
+      "en" : "tsc1 gene inactivation"
+    },
+    "id" : "7",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C19598",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C19598",
+      "en" : "cell cycle regulation process"
+    },
+    "id" : "8",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C41514",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C41514",
+      "en" : "cell adhesion process"
+    },
+    "id" : "9",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C17459",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C17459",
+      "en" : "hispanic or latino"
+    },
+    "id" : "10",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C97915",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C97915",
+      "en" : "pi3k alpha mtor inhibitor pwt33597 mesylate"
+    },
+    "id" : "11",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3766",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c3766",
+      "en" : "clear cell adenocarcinoma"
+    },
+    "id" : "12",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C17133",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C17133",
+      "en" : "signal transduction"
+    },
+    "id" : "13",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C155845",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C155845",
+      "en" : "international metastatic renal cell carcinoma database consortium (imdc) criteria intermediate risk group"
+    },
+    "id" : "14",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C147562",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C147562",
+      "en" : "synthetic vaccine particles rapamycin"
+    },
+    "id" : "15",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "45", "25", "17", "33", "18", "21", "50" ],
+    "iri" : "http://purl.bioontology.org/ontology/PDQ/CDR0000372905",
+    "equivalent" : [ "25", "18", "21" ],
+    "baseIri" : "http://purl.bioontology.org/ontology/PDQ",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "CDR0000372905",
+      "en" : "everolimus"
+    },
+    "id" : "16",
+    "subclasses" : [ "45", "25", "18", "21" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1742",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c1742",
+      "en" : "angiogenesis inhibitor"
+    },
+    "id" : "17",
+    "subclasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C48387",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "en" : "certican"
+    },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C48387",
+      "en" : "everolimus"
+    },
+    "id" : "18"
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C21041",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C21041",
+      "en" : "selp gene"
+    },
+    "id" : "19",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C40062",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C40062",
+      "en" : "cyp11b2 gene"
+    },
+    "id" : "20",
+    "subclasses" : [ ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_68478",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "CHEBI_68478",
+      "en" : "everolimus"
+    },
+    "id" : "21"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16576",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16576",
+      "en" : "female"
+    },
+    "id" : "22",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "58" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C39159",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C39159",
+      "en" : "mtor signaling pathway biocarta"
+    },
+    "id" : "23",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C16612",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C16612",
+      "en" : "gene"
+    },
+    "id" : "24",
+    "subclasses" : [ "57", "19", "61", "20", "38" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/LP65523-0",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "LP65523-0",
+      "en" : "everolimus"
+    },
+    "id" : "25"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.bioontology.org/ontology/PDQ/CDR0000043691",
+    "baseIri" : "http://purl.bioontology.org/ontology/PDQ",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "CDR0000043691",
+      "en" : "stage iii renal cell cancer"
+    },
+    "id" : "26",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C92575",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C92575",
+      "en" : "onatasertib"
+    },
+    "id" : "27",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C74065",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C74065",
+      "en" : "nanoparticle albumin bound rapamycin"
+    },
+    "id" : "28",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "57" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C52312",
+    "equivalent" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "NCIT_C52312",
+      "en" : "tsc1 wt allele"
+    },
+    "id" : "29",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C175469",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C175469",
+      "en" : "fenretinide phospholipid suspension st 001"
+    },
+    "id" : "30",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C49061",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C49061",
+      "en" : "ridaforolimus"
+    },
+    "id" : "31",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "42", "33", "39" ],
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_68481",
+    "equivalent" : [ "33" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "CHEBI_68481",
+      "en" : "mtor inhibitor"
+    },
+    "id" : "32",
+    "subclasses" : [ "28", "0", "30", "31", "1", "2", "33", "3", "34", "35", "4", "40", "44", "46", "11", "47", "48", "49", "15", "54", "55", "56", "18", "62", "27", "63" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C2201",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c2201",
+      "en" : "mtor inhibitor"
+    },
+    "id" : "33"
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C102880",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C102880",
+      "en" : "everolimus tablets for oral suspension"
+    },
+    "id" : "34",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C128632",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C128632",
+      "en" : "mtor kinase inhibitor pp242"
+    },
+    "id" : "35",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C21295",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C21295",
+      "en" : "ligand binding protein gene"
+    },
+    "id" : "36",
+    "subclasses" : [ "57" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C41261",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C41261",
+      "en" : "white"
+    },
+    "id" : "37",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://www.drugtargetontology.org/dto/DTO_03200587",
+    "baseIri" : "http://www.drugtargetontology.org/dto",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "DTO_03200587",
+      "en" : "hk3 gene"
+    },
+    "id" : "38",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C163758",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C163758",
+      "en" : "targeted therapy agent"
+    },
+    "id" : "39",
+    "subclasses" : [ "33" ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C101795",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C101795",
+      "en" : "torc1 2 kinase inhibitor ds 3078a"
+    },
+    "id" : "40",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "60" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C38929",
+    "equivalent" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "en" : "rapamycin target protein 1"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C38929",
+      "en" : "serine threonine protein kinase mtor"
+    },
+    "id" : "41",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C61074",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C61074",
+      "en" : "serine threonine kinase inhibitor"
+    },
+    "id" : "42",
+    "subclasses" : [ "33" ]
+  }, {
+    "superclasses" : [ "58" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C91634",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C91634",
+      "en" : "mtor signaling pathway pid"
+    },
+    "id" : "43",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C82294",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C82294",
+      "en" : "zotarolimus"
+    },
+    "id" : "44",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "16", "25", "17", "33", "18", "21", "50" ],
+    "iri" : "http://purl.bioontology.org/ontology/LNC/MTHU026817",
+    "equivalent" : [ "16", "25", "18", "21" ],
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent", "external"],
+    "label" : {
+      "IRI-based" : "MTHU026817",
+      "en" : "everolimus"
+    },
+    "id" : "45",
+    "subclasses" : [ "16", "25", "18", "21" ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C90548",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C90548",
+      "en" : "sapanisertib"
+    },
+    "id" : "46",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C173879",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C173879",
+      "en" : "encapsulated rapamycin"
+    },
+    "id" : "47",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C173999",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C173999",
+      "en" : "dtrmwxhs 12 everolimus pomalidomide combination agent dtrm 555"
+    },
+    "id" : "48",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C78476",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C78476",
+      "en" : "mtor kinase inhibitor osi 027"
+    },
+    "id" : "49",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C574",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "ncit c574",
+      "en" : "immunosuppressant"
+    },
+    "id" : "50",
+    "subclasses" : [ "18" ]
+  }, {
+    "superclasses" : [ "58" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C91431",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C91431",
+      "en" : "mtor signaling pathway kegg"
+    },
+    "id" : "51",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C75122",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C75122",
+      "en" : "tuberous sclerosis 1"
+    },
+    "id" : "52",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://www.phoc.org.cn/pmo/class/PMO_00035855",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "instances" : 5,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "PMO_00035855",
+      "en" : "mutation"
+    },
+    "id" : "53",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C78856",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C78856",
+      "en" : "mtor kinase inhibitor azd8055"
+    },
+    "id" : "54",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C1844",
+    "equivalent" : [ ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ "equivalent" ],
+    "label" : {
+      "IRI-based" : "ncit c1844",
+      "en" : "temsirolimus"
+    },
+    "id" : "55",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C85469",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C85469",
+      "en" : "pan pi3k mtor inhibitor sf1126"
+    },
+    "id" : "56",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "59", "24", "36" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18259",
+    "equivalent" : [ "59" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "en" : "tuberous sclerosis 1 gene"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "label" : {
+      "IRI-based" : "NCIT_C18259",
+      "en" : "tsc1 gene"
+    },
+    "id" : "57",
+    "subclasses" : [ "29", "59" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://www.phoc.org.cn/pmo/class/PMO_00014894",
+    "baseIri" : "http://www.phoc.org.cn/pmo/class",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "PMO_00014894",
+      "en" : "signaling pathway"
+    },
+    "id" : "58",
+    "subclasses" : [ "43", "23", "51" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/LP63488-8",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "LP63488-8",
+      "en" : "tsc1 gene"
+    },
+    "id" : "59"
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C17325",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C17325",
+      "en" : "serine threonine protein kinase"
+    },
+    "id" : "60",
+    "subclasses" : [ "41" ]
+  }, {
+    "superclasses" : [ "24" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C125170",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C125170",
+      "en" : "dchs2 gene"
+    },
+    "id" : "61",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C152800",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C152800",
+      "en" : "umirolimus"
+    },
+    "id" : "62",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "33" ],
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C133227",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "NCIT_C133227",
+      "en" : "mtor inhibitor gdc 0349"
+    },
+    "id" : "63",
+    "subclasses" : [ ]
+  } ],
+  "class" : [ {
+    "type" : "owl:Class",
+    "id" : "0"
+  }, {
+    "type" : "owl:Class",
+    "id" : "1"
+  }, {
+    "type" : "owl:Class",
+    "id" : "2"
+  }, {
+    "type" : "owl:Class",
+    "id" : "3"
+  }, {
+    "type" : "owl:Class",
+    "id" : "4"
+  }, {
+    "type" : "owl:Class",
+    "id" : "5"
+  }, {
+    "type" : "owl:Class",
+    "id" : "6"
+  }, {
+    "type" : "owl:Class",
+    "id" : "7"
+  }, {
+    "type" : "owl:Class",
+    "id" : "8"
+  }, {
+    "type" : "owl:Class",
+    "id" : "9"
+  }, {
+    "type" : "owl:Class",
+    "id" : "10"
+  }, {
+    "type" : "owl:Class",
+    "id" : "11"
+  }, {
+    "type" : "owl:Class",
+    "id" : "12"
+  }, {
+    "type" : "owl:Class",
+    "id" : "13"
+  }, {
+    "type" : "owl:Class",
+    "id" : "14"
+  }, {
+    "type" : "owl:Class",
+    "id" : "15"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "16"
+  }, {
+    "type" : "owl:Class",
+    "id" : "17"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "18"
+  }, {
+    "type" : "owl:Class",
+    "id" : "19"
+  }, {
+    "type" : "owl:Class",
+    "id" : "20"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "21"
+  }, {
+    "type" : "owl:Class",
+    "id" : "22"
+  }, {
+    "type" : "owl:Class",
+    "id" : "23"
+  }, {
+    "type" : "owl:Class",
+    "id" : "24"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "25"
+  }, {
+    "type" : "owl:Class",
+    "id" : "26"
+  }, {
+    "type" : "owl:Class",
+    "id" : "27"
+  }, {
+    "type" : "owl:Class",
+    "id" : "28"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "29"
+  }, {
+    "type" : "owl:Class",
+    "id" : "30"
+  }, {
+    "type" : "owl:Class",
+    "id" : "31"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "32"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "33"
+  }, {
+    "type" : "owl:Class",
+    "id" : "34"
+  }, {
+    "type" : "owl:Class",
+    "id" : "35"
+  }, {
+    "type" : "owl:Class",
+    "id" : "36"
+  }, {
+    "type" : "owl:Class",
+    "id" : "37"
+  }, {
+    "type" : "owl:Class",
+    "id" : "38"
+  }, {
+    "type" : "owl:Class",
+    "id" : "39"
+  }, {
+    "type" : "owl:Class",
+    "id" : "40"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "41"
+  }, {
+    "type" : "owl:Class",
+    "id" : "42"
+  }, {
+    "type" : "owl:Class",
+    "id" : "43"
+  }, {
+    "type" : "owl:Class",
+    "id" : "44"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "45"
+  }, {
+    "type" : "owl:Class",
+    "id" : "46"
+  }, {
+    "type" : "owl:Class",
+    "id" : "47"
+  }, {
+    "type" : "owl:Class",
+    "id" : "48"
+  }, {
+    "type" : "owl:Class",
+    "id" : "49"
+  }, {
+    "type" : "owl:Class",
+    "id" : "50"
+  }, {
+    "type" : "owl:Class",
+    "id" : "51"
+  }, {
+    "type" : "owl:Class",
+    "id" : "52"
+  }, {
+    "type" : "owl:Class",
+    "id" : "53"
+  }, {
+    "type" : "owl:Class",
+    "id" : "54"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "55"
+  }, {
+    "type" : "owl:Class",
+    "id" : "56"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "57"
+  }, {
+    "type" : "owl:Class",
+    "id" : "58"
+  }, {
+    "type" : "owl:equivalentClass",
+    "id" : "59"
+  }, {
+    "type" : "owl:Class",
+    "id" : "60"
+  }, {
+    "type" : "owl:Class",
+    "id" : "61"
+  }, {
+    "type" : "owl:Class",
+    "id" : "62"
+  }, {
+    "type" : "owl:Class",
+    "id" : "63"
+  } ]
+}

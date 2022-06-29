@@ -1,0 +1,622 @@
+{
+  "individual" : [ {
+    "type" : "owl:NamedIndividual",
+    "id" : "40"
+  } ],
+  "individualAttribute" : [ {
+    "iri" : "http://purl.obolibrary/obo/jane_doe",
+    "attributes" : ["external" ],
+    "baseIri" : "http://purl.obolibrary/obo",
+    "label" : {
+      "IRI-based" : "jane doe"
+    },
+    "id" : "40"
+  } ],
+  "namespace" : "[ ]",
+  "property" : [ {
+    "type" : "rdfs:SubClassOf",
+    "id" : "24"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "25"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "26"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "27"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "28"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "29"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "30"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "31"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "32"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "33"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "34"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "35"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "36"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "37"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "38"
+  }, {
+    "type" : "rdfs:SubClassOf",
+    "id" : "39"
+  }, {
+    "type" : "rdf:type",
+    "id" : "41"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "42"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "43"
+  }, {
+    "type" : "owl:objectProperty",
+    "id" : "44"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "45"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "46"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "47"
+  }, {
+    "type" : "owl:someValuesFrom",
+    "id" : "48"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24",
+    "domain" : "0"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25",
+    "domain" : "1"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26",
+    "domain" : "3"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27",
+    "domain" : "4"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28",
+    "domain" : "5"
+  }, {
+    "range" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29",
+    "domain" : "8"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30",
+    "domain" : "10"
+  }, {
+    "range" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31",
+    "domain" : "12"
+  }, {
+    "range" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32",
+    "domain" : "12"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33",
+    "domain" : "13"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34",
+    "domain" : "14"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35",
+    "domain" : "15"
+  }, {
+    "range" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36",
+    "domain" : "16"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37",
+    "domain" : "19"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38",
+    "domain" : "21"
+  }, {
+    "range" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39",
+    "domain" : "23"
+  }, {
+    "range" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41",
+    "domain" : "40"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_mutation",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "40",
+    "range" : "2",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has mutation"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_disease",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "40",
+    "range" : "9",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has disease"
+    },
+    "id" : "43"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_role",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "40",
+    "range" : "7",
+    "attributes" : [ "object" ],
+    "label" : {
+      "IRI-based" : "has role"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_phenotype",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "2",
+    "range" : "15",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "has phenotype"
+    },
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/increases",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "2",
+    "range" : "18",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "increases"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/inhibits",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "11",
+    "range" : "18",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "inhibits"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/has_role",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "domain" : "11",
+    "range" : "16",
+    "attributes" : [ "someValues" ],
+    "label" : {
+      "IRI-based" : "has role"
+    },
+    "id" : "48"
+  } ],
+  "header" : {
+    "iri" : "http://www.semanticweb.org/filip/ontologies/2022/1/untitled-ontology-36",
+    "languages" : [ "en" ],
+    "prefixList" : {
+      "" : "http://www.semanticweb.org/filip/ontologies/2022/1/untitled-ontology-36#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "obo" : "http://purl.obolibrary.org/obo/"
+    }
+  },
+  "comment" : "Created with Matcha",
+  "classAttribute" : [ {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/immune_system_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "immune system cancer"
+    },
+    "id" : "0",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/cancer_of_the_nervous_system",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "cancer of the nervous system"
+    },
+    "id" : "1",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/met",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ "external"],
+    "label" : {
+      "IRI-based" : "met",
+      "en" : "met oncogene"
+    },
+    "id" : "2",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/blastoma",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "blastoma"
+    },
+    "id" : "3",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/digestive_system_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "digestive system cancer"
+    },
+    "id" : "4",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/carcinoma",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "carcinoma"
+    },
+    "id" : "5",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/person",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "person"
+    },
+    "id" : "6",
+    "subclasses" : [ "8" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/smoker",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "smoker"
+    },
+    "id" : "7",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "6" ],
+    "iri" : "http://purl.obolibrary.org/obo/patient",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "patient"
+    },
+    "id" : "8",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/diabetes",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 1,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "diabetes"
+    },
+    "id" : "9",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/respiratory_system_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "respiratory system cancer"
+    },
+    "id" : "10",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/sunitinib",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "sunitinib"
+    },
+    "id" : "11",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "17", "20" ],
+    "iri" : "http://purl.obolibrary.org/obo/cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "cancer"
+    },
+    "id" : "12",
+    "subclasses" : [ "0", "1", "3", "13", "4", "5", "14", "15", "19", "10", "21", "23" ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/organ_system_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "organ system cancer"
+    },
+    "id" : "13",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/cardiovascular_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "cardiovascular cancer"
+    },
+    "id" : "14",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/renal_cell_carcenoma",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "renal cell carcenoma"
+    },
+    "id" : "15",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "22" ],
+    "iri" : "http://purl.obolibrary.org/obo/antineoplastic_agent",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "antineoplastic agent"
+    },
+    "id" : "16",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/disease_of_cellular_proliferation",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "disease of cellular proliferation"
+    },
+    "id" : "17",
+    "subclasses" : [ "12" ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/tyrosine_kinase_activity",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : ["external" ],
+    "label" : {
+      "IRI-based" : "tyrosine kinase activity"
+    },
+    "id" : "18",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/hematologic_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "hematologic cancer"
+    },
+    "id" : "19",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/neoplasia",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "neoplasia"
+    },
+    "id" : "20",
+    "subclasses" : [ "12" ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/cell_type_cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "cell type cancer"
+    },
+    "id" : "21",
+    "subclasses" : [ ]
+  }, {
+    "superclasses" : [ ],
+    "iri" : "http://purl.obolibrary.org/obo/drug",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "drug"
+    },
+    "id" : "22",
+    "subclasses" : [ "16" ]
+  }, {
+    "superclasses" : [ "12" ],
+    "iri" : "http://purl.obolibrary.org/obo/cancer_by_anatomical_entity",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : { },
+    "attributes" : [ ],
+    "label" : {
+      "IRI-based" : "cancer by anatomical entity"
+    },
+    "id" : "23",
+    "subclasses" : [ ]
+  } ],
+  "class" : [ {
+    "type" : "owl:Class",
+    "id" : "0"
+  }, {
+    "type" : "owl:Class",
+    "id" : "1"
+  }, {
+    "type" : "owl:Class",
+    "id" : "2"
+  }, {
+    "type" : "owl:Class",
+    "id" : "3"
+  }, {
+    "type" : "owl:Class",
+    "id" : "4"
+  }, {
+    "type" : "owl:Class",
+    "id" : "5"
+  }, {
+    "type" : "owl:Class",
+    "id" : "6"
+  }, {
+    "type" : "owl:Class",
+    "id" : "7"
+  }, {
+    "type" : "owl:Class",
+    "id" : "8"
+  }, {
+    "type" : "owl:Class",
+    "id" : "9"
+  }, {
+    "type" : "owl:Class",
+    "id" : "10"
+  }, {
+    "type" : "owl:Class",
+    "id" : "11"
+  }, {
+    "type" : "owl:Class",
+    "id" : "12"
+  }, {
+    "type" : "owl:Class",
+    "id" : "13"
+  }, {
+    "type" : "owl:Class",
+    "id" : "14"
+  }, {
+    "type" : "owl:Class",
+    "id" : "15"
+  }, {
+    "type" : "owl:Class",
+    "id" : "16"
+  }, {
+    "type" : "owl:Class",
+    "id" : "17"
+  }, {
+    "type" : "owl:Class",
+    "id" : "18"
+  }, {
+    "type" : "owl:Class",
+    "id" : "19"
+  }, {
+    "type" : "owl:Class",
+    "id" : "20"
+  }, {
+    "type" : "owl:Class",
+    "id" : "21"
+  }, {
+    "type" : "owl:Class",
+    "id" : "22"
+  }, {
+    "type" : "owl:Class",
+    "id" : "23"
+  } ]
+}
