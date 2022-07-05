@@ -15,7 +15,8 @@ To run VOWLExplain on your machine, download and unpack ZIP folder. After that, 
 
 Note that the conversion of ontologies into the VOWL-JSON format is not part of VOWLExplain but requires an additional converter such as OWL2VOWL, or Matcha. 
 
+
 # Authors
 
-Filipa Serrano
-Cátia Pesquita
+Filipa Serrano  
+Cátia Pesquita  
