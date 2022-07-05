@@ -1357,7 +1357,7 @@ webvowl.app =
 	      .node().parentNode.innerHTML;
 	    
 	    // Insert the reference to VOWL
-	    graphSvgCode = "<!-- Created with WebVOWL (version " + webvowl.version + ")" +
+	    graphSvgCode = "<!-- Created with VOWLExplain (powered by WebVOWL version " + webvowl.version + ")" +
 	      ", http://vowl.visualdataweb.org -->\n" + graphSvgCode;
 	    
 	    escapedGraphSvgCode = escapeUnicodeCharacters(graphSvgCode);
@@ -1766,10 +1766,10 @@ webvowl.app =
 	    
 	    /** modify comment **/
 	    var comment = exportText._comment;
-	    var additionalString = " [Additional Information added by WebVOWL Exporter Version: " + "1.1.7" + "]";
+	    var additionalString = " [Additional Information added by VOWLExplain powered by WebVOWL Exporter Version: " + "1.1.7" + "]";
 	    // adding new string to comment only if it does not exist
 	    if ( comment.indexOf(additionalString) === -1 ) {
-	      exportText._comment = comment + " [Additional Information added by WebVOWL Exporter Version: " + "1.1.7" + "]";
+	      exportText._comment = comment + " [Additional Information added by VOWLExplain powered by WebVOWL Exporter Version: " + "1.1.7" + "]";
 	    }
 	    
 	    var classAttribute = exportText.classAttribute;
@@ -8744,7 +8744,7 @@ webvowl.app =
 
 	          if (loadingNewOntologyForEditor){
 	            ontologyContent = '{\n' +
-	              '  "_comment": "Empty ontology for WebVOWL Editor",\n' +
+	              '  "_comment": "Empty ontology for VOWLExplain Editor",\n' +
 	              '  "header": {\n' +
 	              '    "languages": [\n' +
 	              '      "en"\n' +
@@ -8778,10 +8778,10 @@ webvowl.app =
 	          if (error.status===0){ // assumption this is CORS error when running locally (error status == 0)
 	            ontologyMenu.append_message_toLastBulletPoint(" <span style='color: red'>ERROR STATUS:</span> " + error.status);
 	            if (window.location.toString().startsWith("file:/")){
-	              ontologyMenu.append_message_toLastBulletPoint("<br><p>WebVOWL runs in a local instance.</p>");
+	              ontologyMenu.append_message_toLastBulletPoint("<br><p>VOWLExplain runs in a local instance.</p>");
 	              ontologyMenu.append_message_toLastBulletPoint("<p>CORS prevents to automatically load files on host system.</p>");
 	              ontologyMenu.append_message_toLastBulletPoint("<p>You can load preprocessed ontologies (i.e. VOWL-JSON files) using the upload feature in the ontology menu or by dragging the files and dropping them on the canvas.</p>");
-	              ontologyMenu.append_message_toLastBulletPoint("<p><i>Hint: </i>Note that the conversion of ontologies into the VOWL-JSON format is not part of WebVOWL but requires an additional converter such as OWL2VOWL.</p>");
+	              ontologyMenu.append_message_toLastBulletPoint("<p><i>Hint: </i>Note that the conversion of ontologies into the VOWL-JSON format is not part of VOWLExplain but requires an additional converter such as OWL2VOWL or Matcha.</p>");
 	              ontologyMenu.append_message_toLastBulletPoint("<p>Ontologies can be created using the editor mode (i.e. activate editing mode in <b>Modes</b> menu and create a new ontology using the <b>Ontology</b> menu.</p>");
 	            }
 	          }else {
