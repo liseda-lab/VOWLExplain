@@ -17,5 +17,5 @@ Note that the conversion of ontologies into the VOWL-JSON format is not part of 
 
 # Authors
 
-Filipa Serrano 
+Filipa Serrano
 Cátia Pesquita
