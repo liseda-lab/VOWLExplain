@@ -17,7 +17,7 @@
   }, {
     "type" : "owl:NamedIndividual",
     "id" : "112"
-  }],
+  } ],
   "individualAttribute" : [ {
     "iri" : "http://purl.obolibrary.org/obo/SELPp.PLGSSSY526fs",
     "attributes" : [ ],
@@ -44,16 +44,16 @@
     "id" : "107"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/TSC1p.Q435*",
-    "attributes" : [ "external"],
+    "attributes" : ["external" ],
     "baseIri" : "http://purl.obolibrary.org/obo",
     "label" : {
       "IRI-based" : "tsc1p q435"
     },
     "id" : "108"
   }, {
-    "iri" : "http://purl.obolibrary/obo/patient4",
+    "iri" : "http://purl.obolibrary.org/obo/patient4",
     "attributes" : ["external" ],
-    "baseIri" : "http://purl.obolibrary/obo",
+    "baseIri" : "http://purl.obolibrary.org/obo",
     "label" : {
       "IRI-based" : "patient4"
     },
@@ -188,9 +188,6 @@
   }, {
     "type" : "rdfs:SubClassOf",
     "id" : "103"
-  }, {
-    "type" : "rdf:type",
-    "id" : "115"
   }, {
     "type" : "rdf:type",
     "id" : "116"
@@ -509,11 +506,6 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "103",
     "domain" : "63"
-  }, {
-    "range" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "115",
-    "domain" : "104"
   }, {
     "range" : "53",
     "attributes" : [ "object", "anonymous" ],
@@ -842,44 +834,44 @@
     },
     "id" : "153"
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "domain" : "59",
     "range" : "51",
     "attributes" : [ "someValues" ],
     "label" : {
-      "IRI-based" : "ncit r130",
-      "en" : "gene is element in pathway"
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
     },
     "id" : "154"
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "domain" : "59",
     "range" : "43",
     "attributes" : [ "someValues" ],
     "label" : {
-      "IRI-based" : "ncit r130",
-      "en" : "gene is element in pathway"
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
     },
     "id" : "155"
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_R130",
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_R131",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "domain" : "59",
     "range" : "23",
     "attributes" : [ "someValues" ],
     "label" : {
-      "IRI-based" : "ncit r130",
-      "en" : "gene is element in pathway"
+      "IRI-based" : "ncit r131",
+      "en" : "gene product is element in pathway"
     },
     "id" : "156"
   } ],
   "header" : {
-    "iri" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Finais OWL\\Patient4.rdf",
+    "iri" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Patient4_equivalent.rdf",
     "languages" : [ "en" ],
     "prefixList" : {
-      "" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Finais OWL\\Patient4.rdf#",
+      "" : "C:\\Users\\filip\\OneDrive\\Ambiente de Trabalho\\Tese\\Projetos\\Simulated_Patients\\Simulated Paths\\Patient4_equivalent.rdf#",
       "owl" : "http://www.w3.org/2002/07/owl#",
       "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
@@ -1188,18 +1180,19 @@
     "id" : "22",
     "subclasses" : [ ]
   }, {
-    "superclasses" : [ "58" ],
+    "superclasses" : [ "58", "43", "51" ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C39159",
+    "equivalent" : [ "43", "51" ],
     "baseIri" : "http://purl.obolibrary.org/obo",
     "instances" : 0,
     "annotations" : { },
-    "attributes" : ["external" ],
+    "attributes" : [ "equivalent", "external" ],
     "label" : {
       "IRI-based" : "NCIT_C39159",
       "en" : "mtor signaling pathway biocarta"
     },
     "id" : "23",
-    "subclasses" : [ ]
+    "subclasses" : [ "43", "51" ]
   }, {
     "superclasses" : [ ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C16612",
@@ -1449,18 +1442,16 @@
     "id" : "42",
     "subclasses" : [ "33" ]
   }, {
-    "superclasses" : [ "58" ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C91634",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "instances" : 0,
     "annotations" : { },
-    "attributes" : ["external" ],
+    "attributes" : [ ],
     "label" : {
       "IRI-based" : "NCIT_C91634",
       "en" : "mtor signaling pathway pid"
     },
-    "id" : "43",
-    "subclasses" : [ ]
+    "id" : "43"
   }, {
     "superclasses" : [ "33" ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C82294",
@@ -1481,7 +1472,7 @@
     "baseIri" : "http://purl.bioontology.org/ontology/LNC",
     "instances" : 0,
     "annotations" : { },
-    "attributes" : [ "equivalent", "external"],
+    "attributes" : [ "equivalent", "external" ],
     "label" : {
       "IRI-based" : "MTHU026817",
       "en" : "everolimus"
@@ -1554,18 +1545,16 @@
     "id" : "50",
     "subclasses" : [ "18" ]
   }, {
-    "superclasses" : [ "58" ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C91431",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "instances" : 0,
     "annotations" : { },
-    "attributes" : ["external" ],
+    "attributes" : [ ],
     "label" : {
       "IRI-based" : "NCIT_C91431",
       "en" : "mtor signaling pathway kegg"
     },
-    "id" : "51",
-    "subclasses" : [ ]
+    "id" : "51"
   }, {
     "superclasses" : [ ],
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C75122",
@@ -1795,7 +1784,7 @@
     "type" : "owl:Class",
     "id" : "22"
   }, {
-    "type" : "owl:Class",
+    "type" : "owl:equivalentClass",
     "id" : "23"
   }, {
     "type" : "owl:Class",
@@ -1855,7 +1844,7 @@
     "type" : "owl:Class",
     "id" : "42"
   }, {
-    "type" : "owl:Class",
+    "type" : "owl:equivalentClass",
     "id" : "43"
   }, {
     "type" : "owl:Class",
@@ -1879,7 +1868,7 @@
     "type" : "owl:Class",
     "id" : "50"
   }, {
-    "type" : "owl:Class",
+    "type" : "owl:equivalentClass",
     "id" : "51"
   }, {
     "type" : "owl:Class",
