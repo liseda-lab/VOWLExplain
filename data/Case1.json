@@ -1,9 +1,6 @@
 {
   "individual" : [ {
     "type" : "owl:NamedIndividual",
-    "id" : "88"
-  }, {
-    "type" : "owl:NamedIndividual",
     "id" : "89"
   }, {
     "type" : "owl:NamedIndividual",
@@ -13,42 +10,18 @@
     "id" : "91"
   }, {
     "type" : "owl:NamedIndividual",
-    "id" : "92"
-  }, {
-    "type" : "owl:NamedIndividual",
     "id" : "93"
   }, {
     "type" : "owl:NamedIndividual",
     "id" : "94"
   }, {
     "type" : "owl:NamedIndividual",
-    "id" : "95"
-  }, {
-    "type" : "owl:NamedIndividual",
     "id" : "96"
-  }, {
-    "type" : "owl:NamedIndividual",
-    "id" : "97"
-  }, {
-    "type" : "owl:NamedIndividual",
-    "id" : "98"
-  }, {
-    "type" : "owl:NamedIndividual",
-    "id" : "99"
   }, {
     "type" : "owl:NamedIndividual",
     "id" : "100"
   } ],
   "individualAttribute" : [ {
-    "iri" : "http://www.drugtargetontology.org/dto/DTO_02200011",
-    "attributes" : [ ],
-    "baseIri" : "http://www.drugtargetontology.org/dto",
-    "label" : {
-      "IRI-based" : "DTO_02200011",
-      "en" : "htr6 gene"
-    },
-    "id" : "88"
-  }, {
     "iri" : "http://purl.obolibrary.org/obo/KDM5Cp.G1449G",
     "attributes" : [ ],
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -73,15 +46,6 @@
     },
     "id" : "91"
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_C38928",
-    "attributes" : [ ],
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "label" : {
-      "IRI-based" : "NCIT_C38928",
-      "en" : "mtor gene"
-    },
-    "id" : "92"
-  }, {
     "iri" : "http://purl.obolibrary.org/obo/SPENp.V3588D",
     "attributes" : [ ],
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -98,15 +62,6 @@
     },
     "id" : "94"
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_C95438",
-    "attributes" : [ ],
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "label" : {
-      "IRI-based" : "NCIT_C95438",
-      "en" : "pbrm1 gene"
-    },
-    "id" : "95"
-  }, {
     "iri" : "http://purl.obolibrary.org/obo/VHLp.S80R",
     "attributes" : [ ],
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -114,33 +69,6 @@
       "IRI-based" : "vhlp s80r"
     },
     "id" : "96"
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_C115310",
-    "attributes" : [ ],
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "label" : {
-      "IRI-based" : "NCIT_C115310",
-      "en" : "spen gene"
-    },
-    "id" : "97"
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_C18261",
-    "attributes" : [ ],
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "label" : {
-      "IRI-based" : "NCIT_C18261",
-      "en" : "vhl gene"
-    },
-    "id" : "98"
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/NCIT_C97598",
-    "attributes" : [ ],
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "label" : {
-      "IRI-based" : "NCIT_C97598",
-      "en" : "kdm5c gene"
-    },
-    "id" : "99"
   }, {
     "iri" : "http://obo/patient1",
     "attributes" : ["external" ],
