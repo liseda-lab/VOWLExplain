@@ -14301,7 +14301,7 @@ webvowl =
 	    ANONYMOUS = "anonymous",
 	    DATATYPE = "datatype",
 	    DEPRECATED = "deprecated",
-	    EXTERNAL = "external",
+	    EXTERNAL = "",
 	    OBJECT = "object",
 	    RDF = "rdf",
 	    // Representations
